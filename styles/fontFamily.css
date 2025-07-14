@@ -1,0 +1,24 @@
+/*-------------------- Noto arabic ::start ---------------*/
+@font-face {
+  font-family: "kumbh_sans_bold";
+  src: url("./Kumbh_Sans/KumbhSans-VariableFont_YOPQ\,wght.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "kumbh_sans_medium";
+  src: url("./Kumbh_Sans/KumbhSans-VariableFont_YOPQ\,wght.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "kumbh_sans_regular";
+  src: url("./Kumbh_Sans/KumbhSans-VariableFont_YOPQ\,wght.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "kumbh_sans_semibold";
+  src: url("./Kumbh_Sans/KumbhSans-VariableFont_YOPQ\,wght.ttf");
+  font-weight: 600;
+}

@@ -1,0 +1,317 @@
+@import "./fontFamily.css";
+@import "./fontSizes.css";
+
+.kumbh_sans_bold {
+  font-family: "kumbh_sans_bold";
+}
+
+.kumbh_sans_semibold {
+  font-family: "kumbh_sans_semibold";
+}
+
+.kumbh_sans_medium {
+  font-family: "kumbh_sans_medium";
+}
+
+.kumbh_sans_regular {
+  font-family: "kumbh_sans_regular";
+}
+
+.navheader {
+  header {
+    max-width: 1440px !important;
+    min-height: 6rem !important;
+  }
+}
+
+// Hide scrollbar
+.custom-scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.custom-scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+// Footer CSS
+.footer {
+  .underline-animate {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .underline-animate::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background: white;
+    transition: width 0.3s ease;
+  }
+
+  .underline-animate:hover::after {
+    width: 100%;
+  }
+}
+
+.bg-filter-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bg-filter-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.dropimage-card {
+  position: absolute;
+  top: -80px;
+  right: 0;
+}
+
+/* Hide scrollbar but allow scrolling */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* IE/Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Page Section */
+// .pageSection {
+//   background: url("../public/assets/images/pagesectionImage.png") center center /
+//     cover no-repeat;
+//   z-index: 1;
+//   position: relative;
+//   will-change: transform;
+// }
+
+.gif_overlay1 {
+  position: absolute;
+  bottom: -50%; /* push it halfway out of view */
+  right: 0;
+  z-index: 10; /* behind content but above background */
+  opacity: 0.11;
+  width: 700px;
+  height: 700px;
+  background: url("../public/assets/images/pagesectionGif.gif") center center /
+    cover no-repeat;
+  mix-blend-mode: luminosity;
+  border-radius: 9999px;
+}
+.gif_overlay2 {
+  position: absolute;
+  top: 20%; /* push it halfway out of view */
+  right: -20%;
+  z-index: 11; /* behind content but above background */
+  opacity: 0.11;
+  width: 700px;
+  height: 700px;
+  background: url("../public/assets/images/pagesectionGif.gif") center center /
+    cover no-repeat;
+  mix-blend-mode: luminosity;
+  border-radius: 9999px;
+}
+.gif_overlay3 {
+  position: absolute;
+  bottom: -55%; /* push it halfway out of view */
+  left: 0%;
+  z-index: 11; /* behind content but above background */
+  opacity: 0.11;
+  width: 600px;
+  height: 600px;
+  background: url("../public/assets/images/pagesectionGif.gif") center center /
+    cover no-repeat;
+  mix-blend-mode: luminosity;
+  border-radius: 9999px;
+}
+.gif_overlay4 {
+  position: absolute;
+  top: 0%; /* push it halfway out of view */
+  right: -10%;
+  z-index: 10; /* behind content but above background */
+  opacity: 0.11;
+  width: 900px;
+  height: 900px;
+  background: url("../public/assets/images/pagesectionGif.gif") center center /
+    cover no-repeat;
+  mix-blend-mode: luminosity;
+  border-radius: 9999px;
+}
+
+@media (max-width: 1200px) {
+  .gif_overlay1 {
+    width: 600px;
+    height: 600px;
+    bottom: -65%;
+  }
+  .gif_overlay2 {
+    width: 600px;
+    height: 600px;
+    right: -30%;
+  }
+  .gif_overlay3 {
+    width: 600px;
+    height: 600px;
+    bottom: -60%;
+  }
+  .gif_overlay4 {
+    width: 600px;
+    height: 600px;
+    right: -20%;
+    top: 20%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .gif_overlay1 {
+    width: 500px;
+    height: 500px;
+    bottom: -65%;
+  }
+  .gif_overlay2 {
+    width: 500px;
+    height: 500px;
+    right: -30%;
+  }
+  .gif_overlay3 {
+    width: 400px;
+    height: 400px;
+    bottom: -60%;
+  }
+  .gif_overlay4 {
+    width: 600px;
+    height: 600px;
+    right: -20%;
+  }
+}
+@media (max-width: 768px) {
+  .gif_overlay1 {
+    width: 400px;
+    height: 400px;
+    bottom: -65%;
+  }
+  .gif_overlay2 {
+    width: 400px;
+    height: 400px;
+    right: -30%;
+  }
+  .gif_overlay3 {
+    width: 300px;
+    height: 300px;
+    bottom: -55%;
+  }
+  .gif_overlay4 {
+    width: 600px;
+    height: 600px;
+    right: -20%;
+  }
+}
+
+@media (max-width: 600px) {
+  .gif_overlay1 {
+    width: 300px;
+    height: 300px;
+    bottom: -45%;
+  }
+  .gif_overlay2 {
+    width: 300px;
+    height: 300px;
+    right: -30%;
+    top: 50%;
+  }
+  .gif_overlay3 {
+    width: 300px;
+    height: 300px;
+    bottom: -55%;
+  }
+  .gif_overlay4 {
+    width: 500px;
+    height: 500px;
+    right: -40%;
+  }
+}
+
+@media (max-width: 500px) {
+  .gif_overlay1 {
+    width: 200px;
+    height: 200px;
+    bottom: -25%;
+  }
+  .gif_overlay2 {
+    width: 200px;
+    height: 200px;
+    right: -30%;
+    top: 60%;
+  }
+  .gif_overlay3 {
+    width: 200px;
+    height: 200px;
+    bottom: -30%;
+  }
+  .gif_overlay4 {
+    width: 500px;
+    height: 500px;
+    right: -40%;
+  }
+}
+
+@media (max-width: 400px) {
+  .gif_overlay1 {
+    width: 175px;
+    height: 175px;
+    bottom: -25%;
+  }
+  .gif_overlay2 {
+    width: 175px;
+    height: 175px;
+    right: -30%;
+    top: 70%;
+  }
+  .gif_overlay3 {
+    width: 175px;
+    height: 175px;
+    bottom: -25%;
+  }
+  .gif_overlay4 {
+    width: 450px;
+    height: 450px;
+    right: -50%;
+  }
+}
+
+// service page
+
+.service {
+  .card {
+    background: url("../public/assets/images/cardBg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.service2 {
+  .card {
+    background: url("../public/assets/images/cardbg3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.team-swiper .swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+}
+.team-swiper .swiper-pagination-bullet-active {
+  background-color: var(--brand-secondary, #ff6b35);
+}

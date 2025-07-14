@@ -1,0 +1,69 @@
+/* Theme CSS Variables - Add this to your globals.css */
+
+:root {
+    /* Light theme colors */
+    --brand-white: 255 255 255; /* #FFFFFF */
+    --brand-black: 0 0 0; /* #000000 */
+    --brand-dark: 41 41 41; /* #292929 */
+    --brand-secondary2: 169 169 169; /* #A9A9A9 */
+    --brand-primary: 247 247 247; /* #F7F7F7 */
+    --brand-secondary: 255 255 255; /* #FFFFFF in light mode */
+    --brand-secondaryDark: 26 16 16; /* #1A1010 */
+    --brand-acent: 234 245 248; /* #EAF5F8 */
+    --brand-muted: 169 169 169; /* #A9A9A9 */
+    
+    /* Light theme gradients using your defined colors */
+    --gradient-primary: linear-gradient(to right, rgb(247, 247, 247), rgb(234, 245, 248));
+    --gradient-secondary: linear-gradient(to bottom, rgb(255, 255, 255), rgb(247, 247, 247));
+    --gradient-surface: linear-gradient(to bottom right, rgb(247, 247, 247), rgb(234, 245, 248));
+    
+    /* Light theme shadows */
+    --shadow-light: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-dark: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dark {
+    /* Dark theme colors */
+    --brand-white: 255 255 255; /* #FFFFFF */
+    --brand-black: 0 0 0; /* #000000 */
+    --brand-dark: 41 41 41; /* #292929 */
+    --brand-secondary2: 169 169 169; /* #A9A9A9 */
+    --brand-primary: 247 247 247; /* #F7F7F7 */
+    --brand-secondary: 0 0 0; /* #000000 in dark mode */
+    --brand-secondaryDark: 26 16 16; /* #1A1010 */
+    --brand-acent: 234 245 248; /* #EAF5F8 */
+    --brand-muted: 169 169 169; /* #A9A9A9 */
+    
+    /* Dark theme gradients */
+    --gradient-primary: linear-gradient(to right, rgb(49, 20, 20), rgb(42, 18, 18), rgb(31, 15, 15), rgb(26, 16, 16));
+    --gradient-secondary: linear-gradient(to bottom, rgb(41, 41, 41), rgba(147, 39, 36, 0.29));
+    --gradient-surface: linear-gradient(to bottom right, rgb(49, 20, 20), rgb(40, 17, 17), rgb(31, 15, 15), rgb(26, 16, 16));
+    
+    /* Dark theme shadows */
+    --shadow-light: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+    --shadow-dark: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Optional: Smooth transitions for theme changes */
+  * {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  /* You can also add more specific color combinations for your app */
+  :root {
+    /* Define your custom light theme color combinations */
+    --app-background: var(--brand-white);
+    --app-text: var(--brand-black);
+    --app-card-bg: var(--brand-primary);
+    --app-button-bg: var(--brand-secondary);
+  }
+  
+  .dark {
+    /* Define your custom dark theme color combinations */
+    --app-background: var(--brand-secondaryDark);
+    --app-text: var(--brand-white);
+    --app-card-bg: var(--brand-dark);
+    --app-button-bg: var(--brand-secondary);
+  }
