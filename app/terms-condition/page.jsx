@@ -1,5 +1,5 @@
 "use client";
-import { terms } from "@/public/assets/images";
+// import { terms } from "@/public/assets/images";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import {
@@ -15,7 +15,7 @@ const TermsCondition = () => {
     <div className="min-h-screen bg-brand-light dark:bg-brand-dark">
       {/* Hero Section */}
       <section className="relative text-white py-28 overflow-hidden">
-        <div className="absolute inset-0 w-full h-full">
+        {/* <div className="absolute inset-0 w-full h-full">
           <Image
             src={terms}
             alt="Terms of Service"
@@ -25,7 +25,7 @@ const TermsCondition = () => {
             priority
           />
           <div className="absolute inset-0 bg-black/50"></div>
-        </div>
+        </div> */}
         <div className="relative container mx-auto px-4 text-center">
           <h1 className="text-5xl poppins_semibold mb-4">
             Terms & <span className="text-brand-warning">Conditions</span>
