@@ -42,7 +42,7 @@ const PlatformServices = () => {
       <div className="max-w-7xl mx-auto">
         <SectionHeading
           heading1="IT Solutions"
-          heading2="Services To Prefer Choosing Our Platform"
+          heading2="Why Choose Our Platform for Your Services"
           className="text-center mb-6"
         />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-4 md:my-8">

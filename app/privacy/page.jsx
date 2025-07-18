@@ -26,7 +26,7 @@ export default function Privacy() {
             Privacy Policy
           </h2>
           <p className="text-brand-muted text-base leading-relaxed mb-6">
-            This Privacy Policy describes how [Protection Technologies LLC]
+            This Privacy Policy describes how Protection Technologies LLC
             ("we", "us", "our") collects, uses, and discloses information when
             you use our website and mobile application (collectively, the
             "Services").

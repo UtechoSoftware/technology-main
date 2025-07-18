@@ -71,9 +71,9 @@ const ContactAddress = () => {
                 Business Hours
               </h3>
               <p className="text-brand-muted text-base leading-relaxed">
-                Mon - Sat: 9:00 AM - 5:00 PM
+                Mon - Fri: 9:00 AM - 5:00 PM
                 <br />
-                Sunday: Closed
+                Sat, Sun: Closed
               </p>
             </div>
           </div>

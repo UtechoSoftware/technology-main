@@ -43,7 +43,9 @@ const Footer = () => {
           src={footerBg}
           alt="Overlay"
           fill
-          className="object-cover hidden dark:block opacity-30 dark:opacity-50 z-0"
+          className="object-cover  dark:block opacity-50 dark:opacity-50 z-0"
+          // className="object-cover  dark:block opacity-30 dark:opacity-50 z-0"
+
         />
         <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 py-8 md:py-16 dark:border-t dark:border-gray-800 border-t border-gray-200">
           {/* Main Footer Content */}

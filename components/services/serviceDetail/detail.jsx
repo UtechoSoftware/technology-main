@@ -43,7 +43,7 @@ export default function Detail({ id }) {
     {
       title: "Critical Infrastructure",
       description: [
-        "Ensure the safety and reliability of your critical assets with our expert services in inspection, compliance, and infrastructure integrity. At PROtect LLC, we specialize in safeguarding essential systems—such as pipelines, facilities, and mechanical equipment—through advanced technologies like Eddy Current Testing, Infrared Thermography, and Optical Gas Imaging. Our comprehensive approach helps you stay compliant with regulatory standards, minimize operational risks, and maintain uninterrupted performance of your most vital infrastructure.",
+        "Ensure the safety and reliability of your critical assets with our expert services in inspection, compliance, and infrastructure integrity. At Protection Technologies LLC, we specialize in safeguarding essential systems—such as pipelines, facilities, and mechanical equipment—through advanced technologies like Eddy Current Testing, Infrared Thermography, and Optical Gas Imaging. Our comprehensive approach helps you stay compliant with regulatory standards, minimize operational risks, and maintain uninterrupted performance of your most vital infrastructure.",
       ],
       id: "critical-infrastructure",
       image: project11,
