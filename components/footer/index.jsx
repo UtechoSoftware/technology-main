@@ -45,7 +45,6 @@ const Footer = () => {
           fill
           className="object-cover  dark:block opacity-50 dark:opacity-50 z-0"
           // className="object-cover  dark:block opacity-30 dark:opacity-50 z-0"
-
         />
         <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 py-8 md:py-16 dark:border-t dark:border-gray-800 border-t border-gray-200">
           {/* Main Footer Content */}
@@ -59,8 +58,8 @@ const Footer = () => {
                   className="mb-4 object-contain w-[114px] md:w-[200px]"
                 />
                 <p className="text-gray-500 dark:text-gray-400 text-base leading-relaxed max-w-xs">
-                  Since 1999, LLC has been a trusted leader in integrated
-                  solution systems
+                  Since 1985, Protection Technologies LLC. has been a trusted
+                  leader in integrated solution systems
                 </p>
               </div>
 
@@ -161,19 +160,16 @@ const Footer = () => {
                     <MdLocationOn size={18} className="text-white" />
                   </div>
                   <div>
-                    <h4 className="text-brand-secondary kumbh_sans_semibold text-lg mb-1">
-                      Other Locations
-                    </h4>
                     <p className="text-gray-500 dark:text-gray-400 text-base leading-relaxed">
-                      <p className="kumbh_sans_regular text-brand-secondary dark:text-brand-white">
+                      <h4 className="text-brand-secondary kumbh_sans_semibold text-lg mb-1">
                         HQ Location :
-                      </p>
+                      </h4>
                       39 Route 46 East Unit 801 Pine Brook, NJ 07058
                     </p>
                     <p className="text-gray-500 dark:text-gray-400 text-base leading-relaxed">
-                      <p className="kumbh_sans_regular text-brand-secondary dark:text-brand-white">
+                      <h4 className="text-brand-secondary kumbh_sans_semibold text-lg mb-1">
                         Florida Locations :
-                      </p>
+                      </h4>
                       1990 Main Street Unit 750 Sarasota, FL 34236
                     </p>
                     <p className="text-gray-500 dark:text-gray-400 text-base leading-relaxed">
@@ -208,9 +204,7 @@ const Footer = () => {
                       Email
                     </h4>
                     <p className="text-gray-500 dark:text-gray-400 text-base">
-                      <a href="mailto:ptservice@protectllc.us">
-                        ptservice@protectllc.us
-                      </a>
+                      <a href="mailto:info@protectllc.us">info@protectllc.us</a>
                     </p>
                   </div>
                 </div>

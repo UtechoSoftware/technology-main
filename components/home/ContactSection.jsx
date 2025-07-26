@@ -59,10 +59,10 @@ export default function ContactSection() {
                   Email
                 </h3>
                 <a
-                  href="mailto:ptservice@protectllc.us"
+                  href="mailto:info@protectllc.us"
                   className="dark:text-gray-400 text-brand-muted hover:text-brand-secondary transition-colors"
                 >
-                  ptservice@protectllc.us
+                  info@protectllc.us
                 </a>
               </div>
             </motion.div>

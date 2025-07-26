@@ -7,13 +7,13 @@ import { motionDelay } from "../api/axiosInstance";
 export default function WhyChooseUsSection() {
   const statsData = [
     {
-      number: "5k+",
+      number: "10k+",
       label: "Projects Completed",
       color: "text-green-500",
       bg: "bg-green-500/20",
     },
     {
-      number: "150k+",
+      number: "5k+",
       label: "Customers",
       color: "text-pink-500",
       bg: "bg-pink-500/20",
@@ -25,7 +25,7 @@ export default function WhyChooseUsSection() {
       bg: "bg-purple-500/20",
     },
     {
-      number: "95%",
+      number: "98%",
       label: "Client Retention Rate",
       color: "text-orange-500",
       bg: "bg-orange-500/20",

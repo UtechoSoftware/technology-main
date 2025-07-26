@@ -2,7 +2,6 @@ import React from "react";
 import { FaRegClock } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 import { RiContactsBookLine } from "react-icons/ri";
-import { MdEmail, MdLocationOn } from "react-icons/md";
 
 const ContactAddress = () => {
   return (
@@ -16,32 +15,30 @@ const ContactAddress = () => {
             </div>
             <div>
               <h3 className="text-brand-dark dark:text-white kumbh_sans_semibold text-lg mb-1">
-                Other Locations
+                HQ Location:
               </h3>
+              <p className="text-brand-muted text-base leading-relaxed mb-4">
+                39 Route 46 East Unit 801 Pine Brook, NJ 07058
+              </p>
 
-                <p className="text-brand-muted text-base leading-relaxed">
-                    <p className="kumbh_sans_regular text-brand-secondary dark:text-brand-white">
-                      HQ Location :
-                    </p>
-                    39 Route 46 East Unit 801 Pine Brook, NJ 07058
-                  </p>
-                  <p className="text-gray-500 dark:text-gray-400 text-base leading-relaxed mt-3">
-                    <p className="kumbh_sans_regular text-brand-secondary dark:text-brand-white">
-                      Florida Locations :
-                    </p>
-                    1990 Main Street Unit 750 Sarasota, FL 34236
-                  </p>
-                  <p className="text-gray-500 dark:text-gray-400 text-base leading-relaxed">
-                    Tower 101 building 17th Floor 101 NE 3rd Ave, Fort
-                    Lauderdale, FL 33301.
-                  </p>
+              <p className="kumbh_sans_regular text-brand-secondary dark:text-brand-white mb-1">
+                Other Locations:
+              </p>
+              <p className="text-gray-500 dark:text-gray-400 text-base leading-relaxed mb-3">
+                1990 Main Street Unit 750 Sarasota, FL 34236
+              </p>
+              <p className="text-gray-500 dark:text-gray-400 text-base leading-relaxed">
+                Tower 101 building 17th Floor 101 NE 3rd Ave, Fort Lauderdale,
+                FL 33301
+              </p>
             </div>
-
-         
           </div>
 
           {/* Contact Us */}
-          <div className="flex items-center space-x-4 p-3 lg:p-6 dark:bg-cardGradient bg-brand-ligthSecondaryDark shadow-medium rounded-2xl" style={{height:150}}>
+          <div
+            className="flex items-center space-x-4 p-3 lg:p-6 dark:bg-cardGradient bg-brand-ligthSecondaryDark shadow-medium rounded-2xl"
+            style={{ height: 150 }}
+          >
             <div className="bg-brand-secondary p-3 rounded-lg flex-shrink-0">
               <RiContactsBookLine className="w-6 h-6 text-white" />
             </div>
@@ -52,17 +49,16 @@ const ContactAddress = () => {
               <p className="text-brand-muted text-base leading-relaxed">
                 Phone No.: <a href="tel:+2018918201">+201-891-8201</a>
                 <br />
-                Mail:{" "}
-                <a href="mailto:ptservice@protectllc.us">
-                  ptservice@protectllc.us
-                </a>
+                Mail: <a href="mailto:info@protectllc.us">info@protectllc.us</a>
               </p>
             </div>
           </div>
 
-          {/* Opening Hour */}
-
-          <div className="flex items-center space-x-4 p-3 lg:p-6 dark:bg-cardGradient bg-brand-ligthSecondaryDark shadow-medium rounded-2xl" style={{height:150}}>
+          {/* Business Hours */}
+          <div
+            className="flex items-center space-x-4 p-3 lg:p-6 dark:bg-cardGradient bg-brand-ligthSecondaryDark shadow-medium rounded-2xl"
+            style={{ height: 150 }}
+          >
             <div className="bg-brand-secondary p-3 rounded-lg flex-shrink-0">
               <FaRegClock className="w-6 h-6 text-white" />
             </div>

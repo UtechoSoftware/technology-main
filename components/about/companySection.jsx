@@ -112,7 +112,7 @@ const CompanySection = () => {
               </div>
 
               {/* Growth Card */}
-              <div className="absolute -bottom-16 left-1/2 transform -translate-x-1/2 bg-serviceCardgradient2 rounded-xl py-3 px-6 border-2 shadow-xl border-white border-dotted w-1/2 md:w-[300px]">
+              {/* <div className="absolute -bottom-16 left-1/2 transform -translate-x-1/2 bg-serviceCardgradient2 rounded-xl py-3 px-6 border-2 shadow-xl border-white border-dotted w-1/2 md:w-[300px]">
                 <div className="flex items-center justify-center flex-col">
                   <div className="text-2xl md:text-3xl kumbh_sans_semibold text-white mb-2">
                     68%
@@ -122,7 +122,7 @@ const CompanySection = () => {
                   </div>
                   <div className="text-gray-400 text-sm">For Your Company!</div>
                 </div>
-              </div>
+              </div> */}
 
               {/* Decorative elements */}
               <div className="absolute -z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-brand-dark/10 rounded-full blur-3xl"></div>

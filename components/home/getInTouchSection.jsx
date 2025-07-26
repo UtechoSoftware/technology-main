@@ -32,11 +32,11 @@ export default function GetInTouchSection({ contactImage }) {
               className="text-center lg:text-start text-brand-muted text-base lg:text-lg leading-relaxed mb-8 max-w-3xl m-auto"
               variants={fadeIn("up", motionDelay, true)}
             >
-              Launching a new residential property requires strategic planning,
-              thoughtful design, and flawless execution. With Protection
-              Technologies, LLC by your side, you'll not only meet modern
-              demands but also elevate the living experience for residents well
-              into the future.
+              Launching a new Residential/Commercial property requires strategic
+              planning, thoughtful design, and flawless execution. With
+              Protection Technologies, LLC by your side, you'll not only meet
+              modern demands but also elevate the living experience for
+              residents well into the future.
             </motion.p>
             <motion.div
               className="text-center flex justify-center lg:justify-start items-center"

@@ -28,7 +28,7 @@ export default function OfferSection() {
       number: "04",
       title: "Integrated Smart Systems",
       description:
-        "Our solutions integrate with your smart home setup, giving you centralized control over audio, video, lighting, and ambiance to enhance every space.",
+        "Our solutions integrate with your smart home/commercial setup, giving you centralized control over audio, video, lighting, and ambiance to enhance every space.",
     },
     {
       number: "05",

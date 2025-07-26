@@ -17,7 +17,7 @@ export default function Detail({ id }) {
     {
       title: "Multi Family",
       description: [
-        "Apartment complexes want to keep their tenants safe. Residents’ safety and security are key factors in the residential market. The more secure an individual feels in a home or complex, the more individuals will be willing to live there, and at a higher rate. Protecting your residents creates the demand for your property, which becomes invaluable. Our video surveillance solutions operate in real time to capture events as they occur, and our electronic locking systems can lock any individual out in a matter of seconds.",
+        "Apartment complexes strive to keep their tenants safe. Residents’ safety and security are key factors in the residential market. The more secure an individual feels in a home or complex, the more individuals will be willing to live there, and at a higher rate. Protecting your residents creates the demand for your property, which becomes invaluable. Our video surveillance solutions operate in real time to capture events as they occur, and our electronic locking systems can lock any individual out in a matter of seconds.",
         "We deliver services as soon as your residents need them. With our custom solution, you get maximum security and control over who enters your private home. ",
       ],
       id: "multi-family",
@@ -43,7 +43,7 @@ export default function Detail({ id }) {
     {
       title: "Critical Infrastructure",
       description: [
-        "Ensure the safety and reliability of your critical assets with our expert services in inspection, compliance, and infrastructure integrity. At Protection Technologies LLC, we specialize in safeguarding essential systems—such as pipelines, facilities, and mechanical equipment—through advanced technologies like Eddy Current Testing, Infrared Thermography, and Optical Gas Imaging. Our comprehensive approach helps you stay compliant with regulatory standards, minimize operational risks, and maintain uninterrupted performance of your most vital infrastructure.",
+        "Ensure the safety and reliability of your critical assets with our expert services in inspection, compliance, and infrastructure integrity. At Protection Technologies LLC, we specialize in safeguarding essential systems—such as pipelines, facilities, and mechanical equipment, Infrared Thermography, and Optical Gas Imaging. Our comprehensive approach helps you stay compliant with regulatory standards, minimize operational risks, and maintain uninterrupted performance of your most vital infrastructure.",
       ],
       id: "critical-infrastructure",
       image: project11,
@@ -80,7 +80,7 @@ export default function Detail({ id }) {
     {
       title: "College Housing Solutions",
       description: [
-        "he most important part of college housing is ensuring that students can feel safe in their placements. Every school year college dorms, apartments, and other housing units are switched, and students are rarely in the same dorm year after year. This means that with regular locking systems, it is up to the school to keep track of all keys given out and when. This is not the most trustworthy method as even if this is successful, regular keys can be duplicated.",
+        "The most important part of college housing is ensuring that students can feel safe in their placements. Every school year college dorms, apartments, and other housing units are switched, and students are rarely in the same dorm year after year. This means that with regular locking systems, it is up to the school to keep track of all keys given out and when. This is not the most trustworthy method as even if this is successful, regular keys can be duplicated.",
         "We can set you up with an electronic locking system that cannot be duplicated, can immediately shut down access on a given date, and will allow you to keep track of who exactly has access to certain rooms, club rooms, study rooms, gyms, and any other amenity you may have on campus. Our iLOQ battery-free sustainable solutions or our Assa Abloy VingCard can work on many campuses. Feel free to reach out if you have any questions or would like to know more!",
       ],
       id: "college-housing-solutions",

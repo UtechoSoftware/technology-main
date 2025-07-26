@@ -39,7 +39,7 @@ export default function FeatureDesign() {
                   className="kumbh_sans_bold text-brand-white text-lg"
                   variants={slideIn("up", motionDelay, true)}
                 >
-                  Trusted By 5k
+                  Trusted By 5k+
                 </motion.div>
                 <motion.div
                   className="text-sm kumbh_sans_bold text-brand-white"
@@ -71,10 +71,8 @@ export default function FeatureDesign() {
               className="text-brand-muted text-base lg:text-lg kumbh_sans_medium leading-relaxed text-center lg:text-start"
               variants={fadeIn("up", motionDelay, true)}
             >
-              Protection Technologies, LLC. provides Intrusion Sensors, Fire
-              Alarm Systems, Video Intercom Systems, Commercial Tag Readers for
-              garage door openings and gates, Access Control, Wi-Fi Systems,
-              Internally and Externally day/night IP/analog cameras, and more
+              Protection Technologies, LLC. provides Intrusion Sensors, Gate
+              Systems, Intrusion, Intercom, Fire Systems, Monitoring and more
               for all Multifamily, Government, Commercial, Residential and
               Industrial Applications.
             </motion.p>

@@ -11,7 +11,7 @@ const TimelineSection = () => {
       number: "01",
       title: "Relationships",
       description:
-        "Security is a continuous process, built on exceptional design, powerful systems, and expert oversight. For over 35 years, Protection Technologies has partnered with clients to manage their security systems, allowing them to focus on what matters most. We believe in long-term relationships, delivering tailored solutions that help you succeed.",
+        "Security is a continuous process, built on exceptional design, powerful systems, and expert oversight. For over 40 years, Protection Technologies has partnered with clients to manage their security systems, allowing them to focus on what matters most. We believe in long-term relationships, delivering tailored solutions that help you succeed.",
       side: "right",
       color: "bg-[#011E1D]",
       border: "border-[#069343]",
@@ -20,7 +20,7 @@ const TimelineSection = () => {
       number: "02",
       title: "Experience",
       description:
-        "With over 35 years of unwavering commitment to safety and security, our company stands as a beacon of reliability and expertise in the industry. Throughout the years, we have established ourselves as a trusted partner, providing unparalleled knowledge and cutting-edge solutions to our clients. Our team, composed of highly skilled professionals, is second to none, equipped with a deep understanding of security practices and a passion for safeguarding our clients' assets. When you choose our company, you can trust that you are partnering with a dependable and knowledgeable security provider that consistently exceeds expectations.",
+        "With over 40 years of unwavering commitment to safety and security, our company stands as a beacon of reliability and expertise in the industry. Throughout the years, we have established ourselves as a trusted partner, providing unparalleled knowledge and cutting-edge solutions to our clients. Our team, composed of highly skilled professionals, is second to none, equipped with a deep understanding of security practices and a passion for safeguarding our clients' assets. When you choose our company, you can trust that you are partnering with a dependable and knowledgeable security provider that consistently exceeds expectations.",
       side: "left",
       color: "bg-[#24201A]",
       border: "border-[#CA892B]",

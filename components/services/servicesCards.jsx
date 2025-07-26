@@ -33,7 +33,7 @@ const ServicesCards = () => {
       icon: Service1,
       title: "Multi Family",
       description:
-        "Apartment complexes want to keep their tenants safe. Residents’ safety and security are key factors in the residential market.",
+        "Apartment complexes strive to keep their tenants safe. Residents’ safety and security are key factors in the residential market.",
       link: "Read More",
       id: "multi-family",
     },

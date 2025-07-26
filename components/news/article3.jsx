@@ -35,8 +35,9 @@ export default function Article3() {
           <p className="text-brand-dark dark:text-brand-white text-base leading-relaxed mb-6">
             Modern access control systems go beyond traditional locks and keys.
             By integrating smart card readers, mobile credentials, and
-            cloud-based management, businesses and residential communities can
-            offer secure yet flexible access to authorized individuals only.
+            cloud-based management, businesses and residential/commercial
+            communities can offer secure yet flexible access to authorized
+            individuals only.
           </p>
           <ul className="text-brand-dark dark:text-brand-white text-base leading-relaxed mb-6 list-disc pl-6">
             <li>

@@ -21,7 +21,7 @@ export default function OurOffer() {
       date: "December 26, 2025",
       title: "Relationship",
       description:
-        "Security is a continuous process, built on exceptional design, powerful systems, and expert oversight. For over 35 years, Protection Technologies has partnered with clients to manage their security systems, allowing them to focus on what matters most. We believe in long-term relationships, delivering tailored solutions that help you succeed.",
+        "Security is a continuous process, built on exceptional design, powerful systems, and expert oversight. For over 40 years, Protection Technologies has partnered with clients to manage their security systems, allowing them to focus on what matters most. We believe in long-term relationships, delivering tailored solutions that help you succeed.",
       image: offer1,
       readTime: "5 min read",
     },
@@ -30,7 +30,7 @@ export default function OurOffer() {
       date: "March 05, 2025",
       title: "Experience",
       description:
-        "With over 35 years of unwavering commitment to safety and security, our company stands as a beacon of reliability and expertise in the industry. Throughout the years, we have established ourselves as a trusted partner, providing unparalleled knowledge and cutting-edge solutions to our clients. Our team, composed of highly skilled professionals, is second to none, equipped with a deep understanding of security practices and a passion for safeguarding our clients' assets. When you choose our company, you can trust that you are partnering with a dependable and knowledgeable security provider that consistently exceeds expectations.",
+        "With over 40 years of unwavering commitment to safety and security, our company stands as a beacon of reliability and expertise in the industry. Throughout the years, we have established ourselves as a trusted partner, providing unparalleled knowledge and cutting-edge solutions to our clients. Our team, composed of highly skilled professionals, is second to none, equipped with a deep understanding of security practices and a passion for safeguarding our clients' assets. When you choose our company, you can trust that you are partnering with a dependable and knowledgeable security provider that consistently exceeds expectations.",
       image: offer3,
       readTime: "7 min read",
     },

@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import SectionHeading from "../common/sectionHeading";
 import { IoShieldCheckmarkSharp } from "react-icons/io5";
 import { FaServicestack } from "react-icons/fa";
@@ -10,6 +10,14 @@ import { motionDelay } from "../api/axiosInstance";
 import { motion } from "framer-motion";
 
 const PromiseSection = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const missionText =
+    "Our mission is to provide unparalleled security solutions, ensuring peace of mind and assurance of protection for our clients, their customers, and the public. We deliver a higher standard of security services by deploying the latest innovations. We forge lasting partnerships and enrich the experiences of those engaged in business with us. Together, we uphold professionalism, innovation, and integrity, enriching communities and setting new benchmarks in the realm of technology and security.";
+
+  const truncatedText =
+    "Our mission is to provide unparalleled security solutions, ensuring peace of mind and assurance of protection for our clients, their customers, and the public. We deliver a higher standard of security services by deploying the latest innovations.";
+
   return (
     <motion.div
       className="dark:bg-brand-secondaryDark bg-brand-ligthSecondary text-white py-8 sm:py-16 px-4"
@@ -32,7 +40,7 @@ const PromiseSection = () => {
               variants={slideIn("up", motionDelay)}
               className="text-brand-muted mb-8 leading-relaxed"
             >
-              With Over 35 Years Of Unwavering Commitment To Safety And
+              With Over 40 Years Of Unwavering Commitment To Safety And
               Security, Our Company Stands As A Beacon Of Reliability And
               Expertise In The Industry. Throughout The Years, We Have
               Established Ourselves As A Trusted Partner, Providing Unparalleled
@@ -43,7 +51,7 @@ const PromiseSection = () => {
             <div className="grid sm:grid-cols-2 gap-6 mb-8">
               {/* Security Solutions Card */}
               <motion.div
-                className="dark:bg-[#312828] bg-brand-ligthSecondaryDark shadow-medium p-6 rounded-lg"
+                className="dark:bg-[#312828] bg-brand-ligthSecondaryDark shadow-medium p-6 rounded-lg flex flex-col"
                 variants={flipCard(motionDelay)}
               >
                 <div className="flex gap-2 items-center mb-3">
@@ -52,17 +60,21 @@ const PromiseSection = () => {
                     Our Mission
                   </h3>
                 </div>
-                <p className="text-brand-muted text-base leading-relaxed kumbh_sans_regular">
-                  Our mission is to provide unparalleled security solutions,
-                  ensuring peace of mind and assurance of protection to our
-                  clients, their customers, and the public. We deliver a higher
-                  standard of security services by deploying the latest
-                  innovations.
-                </p>
+                <div className="flex-1">
+                  <p className="text-brand-muted text-base leading-relaxed kumbh_sans_regular">
+                    {isExpanded ? missionText : truncatedText}
+                  </p>
+                  <button
+                    onClick={() => setIsExpanded(!isExpanded)}
+                    className="text-brand-secondary hover:underline text-sm mt-2 font-medium transition-colors duration-200"
+                  >
+                    {isExpanded ? "Read Less" : "Read More"}
+                  </button>
+                </div>
               </motion.div>
 
               <motion.div
-                className="dark:bg-[#312828] bg-brand-ligthSecondaryDark shadow-medium p-6 rounded-lg"
+                className="dark:bg-[#312828] bg-brand-ligthSecondaryDark shadow-medium p-6 rounded-lg flex flex-col"
                 variants={flipCard(motionDelay)}
               >
                 <div className="flex gap-2 items-center mb-3">
@@ -71,18 +83,20 @@ const PromiseSection = () => {
                     Our Vision
                   </h3>
                 </div>
-                <p className="text-brand-muted text-base leading-relaxed kumbh_sans_regular">
-                  Our vision is to cultivate thriving habitats where residents,
-                  businesses, and organizations grow confidently, knowing they
-                  are protected by technology that adapts naturally to their
-                  evolving needs while preserving the harmny between innovation
-                  and human wellbeing.
-                </p>
+                <div className="flex-1">
+                  <p className="text-brand-muted text-base leading-relaxed kumbh_sans_regular">
+                    Our vision is to cultivate thriving habitats where
+                    residents, businesses, and organizations grow confidently,
+                    knowing they are protected by technology that adapts
+                    naturally to their evolving needs while preserving the
+                    harmny between innovation and human wellbeing.
+                  </p>
+                </div>
               </motion.div>
             </div>
 
             {/* Statistics */}
-            <div className="space-y-6 w-2/3">
+            {/* <div className="space-y-6 w-2/3">
               <div>
                 <div className="flex justify-between items-center mb-2">
                   <motion.span
@@ -122,7 +136,7 @@ const PromiseSection = () => {
                   ></div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Column */}
