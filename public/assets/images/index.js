@@ -4,7 +4,7 @@ import avatar4 from "./avatar4.png";
 import brand1 from "./brand1.png";
 import brand1Light from "./brand1light.png";
 import brand2 from "./brand2.png";
-import brand2Light from "./brand2light.png";
+import brand2Light from "./brand2light.jpg";
 import brand3 from "./brand3.png";
 import brand3Light from "./brand3light.png";
 import brand4 from "./brand4.png";
@@ -204,5 +204,5 @@ export {
   remote,
   Tobie,
   Marichelle,
-  Hernan
+  Hernan,
 };

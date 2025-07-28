@@ -11,6 +11,7 @@ import Service6 from "./service6.svg";
 import Service7 from "./service7.svg";
 import Service8 from "./service8.svg";
 import Logo from "./logo.svg";
+import brand13 from "./brand13.svg";
 
 export {
   Spinner,
@@ -26,4 +27,5 @@ export {
   Service7,
   Service8,
   Logo,
+  brand13,
 };

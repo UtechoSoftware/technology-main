@@ -11,8 +11,8 @@ const brands = [
     light: "/assets/images/brand1light.png",
   },
   {
-    dark: "/assets/images/brand2.png",
-    light: "/assets/images/brand2light.png",
+    dark: "/assets/images/brand2light.jpg",
+    light: "/assets/images/brand2light.jpg",
   },
   {
     dark: "/assets/images/brand3.png",
@@ -49,6 +49,10 @@ const brands = [
   {
     dark: "/assets/images/brandlight12.avif",
     light: "/assets/images/brandlight12.avif",
+  },
+  {
+    dark: "/assets/svg/brand13.svg",
+    light: "/assets/svg/brand13.svg",
   },
 ];
 
