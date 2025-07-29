@@ -1,10 +1,10 @@
 "use client";
+import { Button } from "@heroui/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { ThemeSwitch } from "./theme-switch";
-import { Button } from "@heroui/react";
 
 // Custom Lock SVG Component
 const LockIcon = ({ isUnlocked, isAnimating, className }) => {
@@ -114,9 +114,7 @@ export default function NavHeader() {
     { name: "Services", href: "/services" },
     { name: "IT Services", href: "/it-services" },
     { name: "Projects", href: "/projects" },
-        { name: "News", href: "/all-news" },
-    // { name: "News", href: "/news" },
-    { name: "Privacy Policy", href: "/privacy" },
+    { name: "News", href: "/all-news" },
     { name: "Contact Us", href: "/contact-us" },
   ];
 
@@ -188,11 +186,14 @@ export default function NavHeader() {
             {/* Logo */}
             {/* <Image src={logo} alt="Logo" className="w-auto h-16" /> */}
             <Link href="/">
-            <div  className="cursor-pointer">
-            <video autoPlay muted loop className="h-32 md:h-36" playsInline  >
-              <source src="/assets/images/logoVideo1.mp4" type="video/mp4" />
-            </video>
-            </div>
+              <div className="cursor-pointer">
+                <video autoPlay muted loop className="h-32 md:h-36" playsInline>
+                  <source
+                    src="/assets/images/logoVideo1.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
             </Link>
             {/* Desktop Menu */}
             <div className="hidden lg:flex items-center gap-4 xl:gap-8">

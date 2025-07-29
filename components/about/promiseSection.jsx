@@ -89,7 +89,7 @@ const PromiseSection = () => {
                     residents, businesses, and organizations grow confidently,
                     knowing they are protected by technology that adapts
                     naturally to their evolving needs while preserving the
-                    harmny between innovation and human wellbeing.
+                    harmony between innovation and human wellbeing.
                   </p>
                 </div>
               </motion.div>

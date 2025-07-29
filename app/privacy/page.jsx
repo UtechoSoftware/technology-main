@@ -25,73 +25,184 @@ export default function Privacy() {
           <h2 className="text-2xl kumbh_sans_semibold text-brand-dark dark:text-white mb-6">
             Privacy Policy
           </h2>
+          <h2 className="text-lg kumbh_sans_medium text-brand-dark dark:text-brand-secondary2 mb-6">
+            Effective Date: July 28, 2025
+          </h2>
           <p className="text-brand-muted text-base leading-relaxed mb-6">
-            This Privacy Policy describes how Protection Technologies LLC
-            ("we", "us", "our") collects, uses, and discloses information when
-            you use our website and mobile application (collectively, the
-            "Services").
+            Protection Technologies LLC ("we," "our," or "us") respects your
+            privacy and is committed to protecting the personal information you
+            share with us through our website.
+            <br />
+            This Privacy Policy explains how we collect, use, disclose, and
+            safeguard your information when you visit our website and interact
+            with us online. By using our site, you consent to the practices
+            described in this policy.
           </p>
           <h3 className="text-xl kumbh_sans_semibold text-brand-dark dark:text-white mb-2">
             Information We Collect
           </h3>
           <p className="text-brand-muted text-base leading-relaxed mb-4">
-            We do not collect any personal data or sensitive information through
-            our website or mobile application. Our CCTV app is designed solely
-            to provide access to CCTV systems installed at various sites to our
-            customers. We do not capture, store, or process any data from these
-            systems.
+            We may collect the following types of personal and non-personal
+            information:
+            <br />
           </p>
+          <ul className="list-disc ms-5 mb-4">
+            <li>
+              Personal Information: Name, email address, phone number, address,
+              company name, job title, etc., when you voluntarily provide it
+              through forms or account sign-ups.
+            </li>
+            <li>
+              Automated Data: IP address, browser type, pages visited, and the
+              time spent on our website, collected through cookies and similar
+              technologies.
+            </li>
+            <li>
+              Device Information: Type of device, operating system, and unique
+              device identifiers.
+            </li>
+          </ul>
           <h3 className="text-xl kumbh_sans_semibold text-brand-dark dark:text-white mb-2">
-            How We Use Your Information
+            How We Share Your Information
           </h3>
-          <p className="text-brand-muted text-base leading-relaxed mb-4">
-            Since we do not collect any personal data or sensitive information,
-            we do not use any information for any purpose.
+          <p className="text-brand-muted text-base leading-relaxed mb-3">
+            We do not sell your personal information. We may share your
+            information in the following circumstances:
+            <br />
           </p>
+          <ul className="list-disc ms-5 mb-4">
+            <li>
+              With service providers and partners who help us operate our
+              website and services
+            </li>
+            <li>When required by law or to comply with legal processes</li>
+            <li>
+              To protect the rights and safety of our company, employees, users,
+              or the public
+            </li>
+            <li>
+              As part of a business transfer such as a merger or acquisition
+            </li>
+          </ul>
           <h3 className="text-xl kumbh_sans_semibold text-brand-dark dark:text-white mb-2">
-            ​Cookies
+            Cookies and Tracking Technologies
           </h3>
-          <p className="text-brand-muted text-base leading-relaxed mb-4">
+          <p className="text-brand-muted text-base leading-relaxed">
             We do not use cookies or any tracking mechanisms on our website or
             mobile application.
           </p>
-          <h3 className="text-xl kumbh_sans_semibold text-brand-dark dark:text-white mb-2">
-            ​Third-Party Links
-          </h3>
+          <p className="text-brand-muted text-base leading-relaxed mb-3">
+            Our site uses cookies and similar tools to:
+          </p>
+          <ul className="list-disc ms-5 mb-3">
+            <li>Understand user behavior</li>
+            <li>Track traffic patterns</li>
+            <li>Enable essential site functionality</li>
+          </ul>
           <p className="text-brand-muted text-base leading-relaxed mb-4">
-            Our website and mobile application may contain links to third-party
-            websites or services. We are not responsible for the privacy
-            practices or content of these third-party sites. We encourage you to
-            review the privacy policies of those sites.
+            Understand user behavior Track traffic patterns Enable essential
+            site functionality You can manage your cookie preferences through
+            your browser settings. Disabling cookies may affect site
+            performance.
           </p>
           <h3 className="text-xl kumbh_sans_semibold text-brand-dark dark:text-white mb-2">
             Data Security
           </h3>
           <p className="text-brand-muted text-base leading-relaxed mb-4">
-            We take appropriate measures to protect the security of your
-            information. However, since we do not collect any personal data or
-            sensitive information, there is no information to secure.
+            We use industry-standard security measures to protect the
+            confidentiality and integrity of your information. While we strive
+            to protect your data, no method of transmission over the Internet is
+            100% secure.
           </p>
+
           <h3 className="text-xl kumbh_sans_semibold text-brand-dark dark:text-white mb-2">
-            Changes to This Privacy Policy
+            Your Rights and Choices
           </h3>
           <p className="text-brand-muted text-base leading-relaxed mb-4">
-            We reserve the right to update or change our Privacy Policy at any
-            time. Any changes will be posted on this page with an updated
-            revision date.
+            Depending on your location, you may have the right to:
           </p>
+          <ul className="list-disc ms-5 mb-4">
+            <li>Access and review the personal data we have about you</li>
+            <li>Request corrections to inaccurate data</li>
+            <li>Request deletion of your personal information</li>
+            <li>Opt out of marketing communications at any time</li>
+          </ul>
+          <p className="text-brand-muted text-base leading-relaxed mb-4">
+            To exercise any of these rights, please contact us using the
+            information below.
+          </p>
+
           <h3 className="text-xl kumbh_sans_semibold text-brand-dark dark:text-white mb-2">
-            ​Contact Us
+            Third-Party Links
           </h3>
           <p className="text-brand-muted text-base leading-relaxed mb-4">
-            If you have any questions or concerns about our Privacy Policy,
-            please contact us at using the below form.
+            Our website may contain links to external websites. We are not
+            responsible for the privacy practices or the content of those
+            third-party sites. Please review their privacy policies before
+            submitting information.
+          </p>
+          <h3 className="text-xl kumbh_sans_semibold text-brand-dark dark:text-white mb-2">
+            Children's Privacy
+          </h3>
+          <p className="text-brand-muted text-base leading-relaxed mb-4">
+            Our services are not intended for children under 13 years of age. We
+            do not knowingly collect personal data from children without
+            parental consent.
           </p>
           <h3 className="text-xl kumbh_sans_semibold text-brand-dark dark:text-white mb-4">
-            ​Texting Opt In
+            Data Retention
           </h3>
           <p className="text-brand-muted text-base leading-relaxed mb-4">
-            Information is not shared with any third parties.
+            We retain personal data only as long as necessary to fulfill the
+            purposes outlined in this policy unless a longer retention period is
+            required by law.
+          </p>
+          <h3 className="text-xl kumbh_sans_semibold text-brand-dark dark:text-white mb-4">
+            Updates to This Policy
+          </h3>
+          <p className="text-brand-muted text-base leading-relaxed mb-4">
+            We may update this Privacy Policy periodically. When we do, we will
+            revise the “Effective Date” at the top of this page. Continued use
+            of our website following changes signifies your acceptance of the
+            new policy.
+          </p>
+          <h3 className="text-xl kumbh_sans_semibold text-brand-dark dark:text-white mb-4">
+            Contact Us
+          </h3>
+          <p className="text-brand-muted text-base leading-relaxed mb-4">
+            If you have any questions about this Privacy Policy or our data
+            practices, please contact us:
+            <br />
+            Protection Technologies LLC
+            <br />
+            <span className="kumbh_sans_semibold text-brand-dark dark:text-white me-2">
+              HQ Location:{" "}
+            </span>
+            39 Route 46 East, Unit 801 Pine Brook, NJ 07058
+            <br />
+            <p className="kumbh_sans_semibold text-brand-dark dark:text-white me-2">
+              Florida Locations:{" "}
+            </p>
+            <ul className="list-disc ms-5">
+              <li>1990 Main Street, Unit 750 Sarasota, FL 34236</li>
+              <li>
+                Tower 101 Building, 17th Floor 101 NE 3rd Ave Fort Lauderdale,
+                FL 33301
+              </li>
+            </ul>
+            <span className="kumbh_sans_semibold text-brand-dark dark:text-white me-2">
+              Phone:
+            </span>
+            <a className="hover:underline" href="tel:+12018918201">
+              +1 (201) 891-8201
+            </a>
+            <br />
+            <span className="kumbh_sans_semibold text-brand-dark dark:text-white me-2">
+              Email:
+            </span>
+            <a className="hover:underline" href="mailto:info@protectllc.us">
+              info@protectllc.us
+            </a>
           </p>
         </div>
       </div>
