@@ -47,7 +47,7 @@ const ContactAddress = () => {
                 Contact Us
               </h3>
               <p className="text-brand-muted text-base leading-relaxed">
-                Phone No.: <a href="tel:888-425-573-2873">888-425-573-2873</a>
+                Phone No.: <a href="tel:+2018918201">+201-891-8201</a>
                 <br />
                 Mail: <a href="mailto:info@protectllc.us">info@protectllc.us</a>
               </p>
