@@ -193,8 +193,8 @@ export default function Privacy() {
             <span className="kumbh_sans_semibold text-brand-dark dark:text-white me-2">
               Phone:
             </span>
-            <a className="hover:underline" href="tel:+12018918201">
-              +1 (201) 891-8201
+            <a className="hover:underline" href="tel:+8884255732873">
+              888-425-573-2873
             </a>
             <br />
             <span className="kumbh_sans_semibold text-brand-dark dark:text-white me-2">
