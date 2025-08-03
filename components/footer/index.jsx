@@ -189,7 +189,7 @@ const Footer = () => {
                       Phone
                     </h4>
                     <div className="text-gray-500 dark:text-gray-400 text-base space-y-1">
-                      <a href="tel:+2018918201">+201-891-8201</a>
+                      <a href="tel:888-425-573-2873">888-425-573-2873</a>
                     </div>
                   </div>
                 </div>
