@@ -14,8 +14,8 @@ import SectionHeading from "../common/sectionHeading";
 
 const CompanySection = () => {
   const stats = [
-    { number: "4K+", label: "Complete Project" },
-    { number: "4K+", label: "Different Design" },
+    { number: "10K+", label: "Complete Project" },
+    { number: "10K+", label: "Different Design" },
     { number: "16K", label: "Customers" },
   ];
 
