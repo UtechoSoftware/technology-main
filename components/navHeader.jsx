@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { ThemeSwitch } from "./theme-switch";
+import SupportModal from "./common/modals/supportModal";
 
 // Custom Lock SVG Component
 const LockIcon = ({ isUnlocked, isAnimating, className }) => {
@@ -103,6 +104,7 @@ export default function NavHeader() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [hoveredItem, setHoveredItem] = useState(null);
+  const [supportModalOpen, setSupportModalOpen] = useState(false);
   const pathname = usePathname();
 
   // Check if current page is home
@@ -127,18 +129,15 @@ export default function NavHeader() {
     setHoveredItem(null);
   };
 
-  const handleTicket = () => {
-    router.push("/contact-us");
+  const handleSupportModal = () => {
     setIsMenuOpen(false);
     setHoveredItem(null);
+    setSupportModalOpen(true);
   };
 
-  // Scroll effect - Check for even 1px scroll
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
-
-      // Agar 1px bhi scroll ho gaya hai to blur effect lagao
       if (currentScrollPos > 0) {
         setIsScrolled(true);
       } else {
@@ -146,7 +145,6 @@ export default function NavHeader() {
       }
     };
 
-    // Initial check - page load ke time scroll position check karo
     handleScroll();
 
     window.addEventListener("scroll", handleScroll);
@@ -156,7 +154,6 @@ export default function NavHeader() {
     };
   }, []);
 
-  // Prevent body scroll when menu is open
   useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflow = "hidden";
@@ -164,7 +161,6 @@ export default function NavHeader() {
       document.body.style.overflow = "auto";
     }
 
-    // Cleanup on unmount
     return () => {
       document.body.style.overflow = "auto";
     };
@@ -234,8 +230,7 @@ export default function NavHeader() {
             <div className="hidden lg:flex items-center gap-3">
               <ThemeSwitch />
               <Button
-                as={Link}
-                href="/contact-us"
+                onClick={handleSupportModal}
                 className="px-4 py-2 md:py-[12px] border border-brand-secondary flex justify-center gap-3 items-center bg-brand-secondary text-white rounded-full text-sm kumbh_sans_semibold hover:bg-brand-secondaryDark transition-colors duration-300"
               >
                 Support Ticket
@@ -294,7 +289,7 @@ export default function NavHeader() {
                 aria-label="Close menu"
                 className="rounded-full transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer "
               >
-                <CloseIcon className="text-white w-12 h-12" />
+                <CloseIcon className="text-white w-10 h-10" />
               </button>
             </div>
 
@@ -347,9 +342,7 @@ export default function NavHeader() {
               {/* Mobile Get Consultation Button */}
               <div className="pt-8 transform transition-all duration-700 delay-700">
                 <Button
-                  as={Link}
-                  href="/contact-us"
-                  onClick={handleNavClose}
+                  onClick={handleSupportModal}
                   className="px-8 py-6 border border-brand-secondary flex justify-center gap-3 items-center bg-brand-secondary text-white rounded-full text-lg kumbh_sans_semibold hover:bg-brand-secondaryDark transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-lg hover:shadow-xl"
                 >
                   Support Ticket
@@ -403,6 +396,10 @@ export default function NavHeader() {
           animation: slideInFromTop 0.5s ease-out forwards;
         }
       `}</style>
+      <SupportModal
+        isOpen={supportModalOpen}
+        onClose={() => setSupportModalOpen(false)}
+      />
     </>
   );
 }
