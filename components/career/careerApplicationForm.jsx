@@ -17,7 +17,7 @@ const CareerApplicationForm = () => {
     experience: "",
     resume: null,
   });
-  const [captchaToken, setCaptchaToken] = useState(null);
+  // const [captchaToken, setCaptchaToken] = useState(null);
 
   const [errors, setErrors] = useState({});
 
@@ -134,10 +134,10 @@ const CareerApplicationForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!captchaToken) {
-      toast.error("Please verify ReCAPTCHA!");
-      return;
-    }
+    // if (!captchaToken) {
+    //   toast.error("Please verify ReCAPTCHA!");
+    //   return;
+    // }
     const newErrors = validateForm();
 
     if (Object.keys(newErrors).length > 0) {
@@ -150,6 +150,8 @@ const CareerApplicationForm = () => {
         resumeSize: formData.resume?.size,
         resumeType: formData.resume?.type,
       });
+
+      toast.success("Career Application Form submitted successfully!");
 
       // Reset form
       setFormData({
@@ -496,10 +498,10 @@ const CareerApplicationForm = () => {
               </div>
             </div>
 
-            <ReCAPTCHA
+            {/* <ReCAPTCHA
               sitekey={GOOGLE_RECAPTCHA_SITE_KEY}
               onChange={(token) => setCaptchaToken(token)}
-            />
+            /> */}
 
             {/* Submit Button */}
             <div className="text-center">
