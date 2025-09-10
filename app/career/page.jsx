@@ -1,7 +1,5 @@
 import CareerApplicationForm from "@/components/career/careerApplicationForm";
 import PageSection from "@/components/common/pageSection";
-import { careerBanner } from "@/public/assets/images";
-import React from "react";
 
 export default function Jobs() {
   return (
@@ -10,8 +8,7 @@ export default function Jobs() {
         <PageSection
           title="Career"
           breadcrumb="Career"
-          url={careerBanner}
-          isImage={true}
+          url="https://cdn.midjourney.com/video/e3f8bf9b-ed46-45da-906c-555c0c4a3442/0.mp4"
         />
       </div>
       <CareerApplicationForm />

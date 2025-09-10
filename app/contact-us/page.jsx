@@ -10,7 +10,7 @@ export default function Contact() {
       <PageSection
         title="Contact Us"
         breadcrumb="Contact Us"
-        url="https://cdn.midjourney.com/video/d2619775-95b5-4a44-af1a-07da3bf3ddf7/0.mp4"
+        url="https://cdn.midjourney.com/video/6baa6447-7e84-47ea-90ae-d361ba05b949/0.mp4"
       />
       <ContactAddress />
       <ContactForm />
