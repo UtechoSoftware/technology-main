@@ -27,7 +27,7 @@ export default function Home() {
       <ServicesSection />
       <WhyChooseUsSection />
       <GetInTouchSection />
-      <NewsSection />
+      <NewsSection isHome={true} />
       <ContactSection />
     </main>
   );

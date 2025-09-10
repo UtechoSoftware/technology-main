@@ -1,4 +1,7 @@
+import React from "react";
 import PageSection from "@/components/common/pageSection";
+import BlogSection from "@/components/news/blogSection";
+import ContactSection from "@/components/home/ContactSection";
 import NewsSection from "@/components/home/newsSection";
 
 export default function page() {

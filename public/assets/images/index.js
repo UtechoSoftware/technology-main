@@ -118,6 +118,7 @@ import press4Sub2 from "./press4Sub2.webp";
 import press4Sub3 from "./press4Sub3.webp";
 import press4Sub4 from "./press4Sub4.webp";
 import press4Sub5 from "./press4Sub5.webp";
+import careerBanner from "./careerBanner.jpeg";
 
 export {
   pagesectionImage,
@@ -236,4 +237,5 @@ export {
   press4Sub3,
   press4Sub4,
   press4Sub5,
+  careerBanner,
 };

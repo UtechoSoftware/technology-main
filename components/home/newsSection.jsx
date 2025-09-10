@@ -23,7 +23,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 
-export default function NewsSection() {
+export default function NewsSection({ isHome = false }) {
   const router = useRouter();
   const pathname = usePathname();
 
@@ -105,7 +105,7 @@ export default function NewsSection() {
           <div className="">
             <SectionHeading
               heading1="New Blog"
-              heading2="Latest News and Insights"
+              heading2="Latest Press and Insights"
               className="mb-6 flex items-center justify-center lg:items-start flex-col"
             />
             <motion.p
@@ -147,7 +147,7 @@ export default function NewsSection() {
         </div>
 
         <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 gap-6">
-          {newsData.map((article, index) => (
+          {(isHome ? newsData.slice(0, 3) : newsData).map((article, index) => (
             <motion.div
               key={article.id}
               className="bg-brand-ligthSecondaryDark shadow-lg dark:bg-neutral-800 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl group"

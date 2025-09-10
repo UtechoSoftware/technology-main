@@ -1,11 +1,13 @@
 "use client";
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function PageSection({
   title,
   breadcrumb,
   url = "/assets/images/pageVideo.mp4",
+  isImage,
 }) {
   const router = useRouter();
   return (
@@ -14,17 +16,26 @@ export default function PageSection({
       <div className="gif_overlay2"></div>
       <div className="gif_overlay3"></div> */}
       {/* Main Content */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="w-full h-full object-cover absolute top-0 left-0 z-0"
-        // style={{ mixBlendMode: "luminosity" }}
-      >
-        <source src={url} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      {isImage ? (
+        <Image
+          src={url}
+          className="w-full h-full object-cover absolute top-0 left-0 z-0"
+          alt="Banner Image"
+        />
+      ) : (
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-full object-cover absolute top-0 left-0 z-0"
+          // style={{ mixBlendMode: "luminosity" }}
+        >
+          <source src={url} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      )}
+
       <div className="relative z-20 text-center text-white">
         <h1 className="text-4xl md:text-5xl kumbh_sans_semibold mb-4">
           {title}
