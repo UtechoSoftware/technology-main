@@ -6,9 +6,12 @@ import toast from "react-hot-toast";
 import Cookies from "js-cookie";
 import { useDispatch } from "react-redux";
 
+export const GOOGLE_RECAPTCHA_SITE_KEY =
+  "6LcqWcQrAAAAAIjyarXlKJ6-h5fmrcS8tb21Bc3g";
+
 const ApiFunction = () => {
   const router = useRouter();
-  const dispatch = useDispatch(); 
+  const dispatch = useDispatch();
   // Define headers
   const header1 = {
     "Content-Type": "application/json",
@@ -18,26 +21,26 @@ const ApiFunction = () => {
     "Content-Type": "multipart/form-data",
   };
 
- //logout function - updated to clear cookies too
- const handleUserLogout = () => {
-  // Clear localStorage
-  localStorage.removeItem("estate_loop_token");
-  
-  // Also clear cookies
-  Cookies.remove("estate_loop_token");
-  
-  // Update Redux state
-  dispatch(setLogout());
-  
-  // Redirect
-  router.replace("/login");
-  toast.error("Your session has expired, please login");
-};
+  //logout function - updated to clear cookies too
+  const handleUserLogout = () => {
+    // Clear localStorage
+    localStorage.removeItem("estate_loop_token");
+
+    // Also clear cookies
+    Cookies.remove("estate_loop_token");
+
+    // Update Redux state
+    dispatch(setLogout());
+
+    // Redirect
+    router.replace("/login");
+    toast.error("Your session has expired, please login");
+  };
 
   // GET request
   const get = async (endpoint) => {
     const apiResponse = axiosInstance
-    .get(endpoint, { headers: header1 })
+      .get(endpoint, { headers: header1 })
       .then((response) => response?.data)
       .catch((error) => {
         console.error("Error in GET request:", error);

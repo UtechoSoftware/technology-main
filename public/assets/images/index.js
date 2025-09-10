@@ -103,6 +103,22 @@ import Placeholder from "./placeholder.webp";
 import accesscontrol from "./accesscontrol.jpg";
 import remote from "./remote.jpg";
 
+import press1 from "./press1.webp";
+import press2 from "./press2.webp";
+import press3 from "./press3.webp";
+import press4 from "./press4.webp";
+import press1Sub1 from "./press1Sub1.webp";
+import press1Sub2 from "./press1Sub2.webp";
+import press1Sub3 from "./press1Sub3.webp";
+import press2Sub1 from "./press2Sub1.webp";
+import press3Sub1 from "./press3Sub1.webp";
+import press3Sub2 from "./press3Sub2.webp";
+import press4Sub1 from "./press4Sub1.webp";
+import press4Sub2 from "./press4Sub2.webp";
+import press4Sub3 from "./press4Sub3.webp";
+import press4Sub4 from "./press4Sub4.webp";
+import press4Sub5 from "./press4Sub5.webp";
+
 export {
   pagesectionImage,
   pagesectionGif,
@@ -205,4 +221,19 @@ export {
   Tobie,
   Marichelle,
   Hernan,
+  press1,
+  press2,
+  press3,
+  press4,
+  press1Sub1,
+  press1Sub2,
+  press1Sub3,
+  press2Sub1,
+  press3Sub1,
+  press3Sub2,
+  press4Sub1,
+  press4Sub2,
+  press4Sub3,
+  press4Sub4,
+  press4Sub5,
 };

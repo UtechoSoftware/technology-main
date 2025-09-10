@@ -9,11 +9,19 @@ import { Button } from "@heroui/react";
 import { motion } from "framer-motion";
 import { motionDelay } from "../api/axiosInstance";
 import SectionHeading from "../common/sectionHeading";
-import { accesscontrol, news, remote } from "@/public/assets/images";
+import {
+  accesscontrol,
+  news,
+  press1,
+  press2,
+  press3,
+  press4,
+  remote,
+} from "@/public/assets/images";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { usePathname } from 'next/navigation';
+import { usePathname } from "next/navigation";
 
 export default function NewsSection() {
   const router = useRouter();
@@ -22,6 +30,42 @@ export default function NewsSection() {
   const newsData = [
     {
       id: 1,
+      date: "04 September 2025",
+      slug: "how-protection-technologies-llc-delivers-security-you-can-trust",
+      title:
+        "Inside the Technology: How Protection Technologies LLC Delivers Security You Can Trust",
+      image: press1,
+      readTime: "5 min read",
+    },
+    {
+      id: 2,
+      date: "06 September 2025",
+      slug: "leading-with-integrity-the-business-philosophy-behind-protection-technologies-llc",
+      title:
+        "Leading with Integrity: The Business Philosophy Behind Protection Technologies LLC",
+      image: press2,
+      readTime: "2 min read",
+    },
+    {
+      id: 3,
+      date: "06 September 2025",
+      slug: "security-meets-vision-how-mike-singers-principles-drive-protection-technologies-llcs-cutting-edge-solutions",
+      title:
+        "Security Meets Vision: How Mike Singer’s Principles Drive Protection Technologies LLC’s Cutting-Edge Solutions",
+      image: press3,
+      readTime: "2 min read",
+    },
+    {
+      id: 4,
+      date: "04 September 2025",
+      slug: "from-east-coast-leader-to-national-contender-how-protection-technologies-llc-is-redefining-modern-security",
+      title:
+        "From East Coast Leader to National Contender: How Protection Technologies LLC is Redefining Modern Security",
+      image: press4,
+      readTime: "5 min read",
+    },
+    {
+      id: 5,
       date: "December 26, 2025",
       slug: "latch-announces-first-building-wide-installation-of-works-with-latch-marks-usa-locks",
       title:
@@ -30,7 +74,7 @@ export default function NewsSection() {
       readTime: "5 min read",
     },
     {
-      id: 2,
+      id: 6,
       date: "March 05, 2025",
       slug: "why-247-remote-video-surveillance-is-essential-for-modern-businesses",
       title:
@@ -39,7 +83,7 @@ export default function NewsSection() {
       readTime: "3 min read",
     },
     {
-      id: 3,
+      id: 7,
       date: "March 05, 2025",
       slug: "smart-access-control-security-meets-convenience",
       title: "Smart Access Control: Security Meets Convenience",
@@ -74,35 +118,31 @@ export default function NewsSection() {
             </motion.p>
           </div>
           <motion.div className="mt-6 lg:mt-0">
-            {
-              pathname !== '/all-news' ?
-            
-            <Button
-              as={Link}
-              className="bg-brand-secondary border border-brand-secondary hover:bg-brand-secondaryDark text-white px-6 py-3 rounded-full kumbh_sans_semibold duration-300 lg:flex items-center gap-2 hidden"
-              href="/all-news"
-              variants={fadeIn("up", motionDelay, true)}
-              endContent={
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              }
-            >
-              See All
-            </Button>
-            :
-            null
-        }
+            {pathname !== "/all-news" ? (
+              <Button
+                as={Link}
+                className="bg-brand-secondary border border-brand-secondary hover:bg-brand-secondaryDark text-white px-6 py-3 rounded-full kumbh_sans_semibold duration-300 lg:flex items-center gap-2 hidden"
+                href="/all-news"
+                variants={fadeIn("up", motionDelay, true)}
+                endContent={
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                }
+              >
+                See All
+              </Button>
+            ) : null}
           </motion.div>
         </div>
 
@@ -119,7 +159,7 @@ export default function NewsSection() {
                   alt={article.title}
                   className="w-full h-48 md:h-56 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-black/20 dark:bg-black/50 group-hover:bg-black/0 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-black/20 dark:bg-black/30 group-hover:bg-black/0 transition-opacity duration-300"></div>
               </div>
 
               <div className="p-3 lg:p-6">

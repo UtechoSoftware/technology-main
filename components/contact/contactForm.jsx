@@ -1,6 +1,6 @@
 "use client";
 import { contactUsImage } from "@/public/assets/images";
-import { Button } from "@heroui/react";
+import { Button, Input, Textarea, Select, SelectItem } from "@heroui/react";
 import Image from "next/image";
 import React, { useState } from "react";
 
@@ -102,102 +102,134 @@ const ContactForm = () => {
               {/* Name and Email Row */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <input
+                  <Input
                     type="text"
                     name="name"
-                    placeholder="Name"
+                    label="Name"
+                    labelPlacement="outside"
+                    placeholder="Enter your Name"
                     value={formData.name}
                     onChange={handleInputChange}
-                    className={`w-full bg-transparent text-white placeholder-gray-400 px-4 py-3 rounded-3xl border border-gray-600 ${
-                      errors.name ? "border-brand-secondary" : "border-gray-600"
-                    } focus:border-brand-secondary focus:outline-none transition-colors`}
+                    variant="bordered"
+                    size="lg"
+                    isInvalid={!!errors.name}
+                    errorMessage={errors.name}
+                    classNames={{
+                      input:
+                        "dark:text-white text-brand-dark dark:placeholder:text-gray-500 placeholder:text-brand-muted",
+                      inputWrapper:
+                        "dark:bg-gray-800/50 bg-brand-white dark:border-gray-700 border-brand-secondary2/30 hover:border-brand-secondary/50 focus-within:!border-brand-secondary h-14",
+                    }}
                   />
-                  {errors.name && (
-                    <span className="text-brand-secondary text-xs mt-1 flex items-center">
-                      <span className="mr-1">*</span>
-                      {errors.name}
-                    </span>
-                  )}
                 </div>
 
                 <div>
-                  <input
+                  <Input
                     type="email"
                     name="email"
-                    placeholder="Email"
+                    label="Email"
+                    labelPlacement="outside"
+                    placeholder="Enter your Email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className={`w-full bg-transparent text-white placeholder-gray-400 px-4 py-3 rounded-3xl border border-gray-600 ${
-                      errors.email
-                        ? "border-brand-secondary"
-                        : "border-gray-600"
-                    } focus:border-brand-secondary focus:outline-none transition-colors`}
+                    variant="bordered"
+                    size="lg"
+                    isInvalid={!!errors.email}
+                    errorMessage={errors.email}
+                    classNames={{
+                      input:
+                        "dark:text-white text-brand-dark dark:placeholder:text-gray-500 placeholder:text-brand-muted",
+                      inputWrapper:
+                        "dark:bg-gray-800/50 bg-brand-white dark:border-gray-700 border-brand-secondary2/30 hover:border-brand-secondary/50 focus-within:!border-brand-secondary h-14",
+                    }}
                   />
-                  {errors.email && (
-                    <span className="text-brand-secondary text-xs mt-1 flex items-center">
-                      <span className="mr-1">*</span>
-                      {errors.email}
-                    </span>
-                  )}
                 </div>
               </div>
 
               {/* Number and Service Row */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <input
+                  <Input
                     type="tel"
                     name="number"
-                    placeholder="Number"
+                    label="Number"
+                    labelPlacement="outside"
+                    placeholder="Enter your Number"
                     value={formData.number}
                     onChange={handleInputChange}
-                    className={`w-full bg-transparent text-white placeholder-gray-400 px-4 py-3 rounded-3xl border border-gray-600 ${
-                      errors.number
-                        ? "border-brand-secondary"
-                        : "border-gray-600"
-                    } focus:border-brand-secondary focus:outline-none transition-colors`}
+                    variant="bordered"
+                    size="lg"
+                    isInvalid={!!errors.number}
+                    errorMessage={errors.number}
+                    classNames={{
+                      input:
+                        "dark:text-white text-brand-dark dark:placeholder:text-gray-500 placeholder:text-brand-muted",
+                      inputWrapper:
+                        "dark:bg-gray-800/50 bg-brand-white dark:border-gray-700 border-brand-secondary2/30 hover:border-brand-secondary/50 focus-within:!border-brand-secondary h-14",
+                    }}
                   />
-                  {errors.number && (
-                    <span className="text-brand-secondary text-xs mt-1 flex items-center">
-                      <span className="mr-1">*</span>
-                      {errors.number}
-                    </span>
-                  )}
                 </div>
 
                 <div>
-                  <select
-                    name="service"
-                    value={formData.service}
-                    onChange={handleInputChange}
-                    className={`w-full bg-transparent text-white px-4 py-3 rounded-3xl border border-gray-600 ${
-                      errors.service
-                        ? "border-brand-secondary"
-                        : "border-gray-600"
-                    } focus:border-brand-secondary focus:outline-none transition-colors`}
+                  <Select
+                    placeholder="Service"
+                    label="Service"
+                    labelPlacement="outside"
+                    variant="bordered"
+                    size="lg"
+                    selectedKeys={formData.service ? [formData.service] : []}
+                    onSelectionChange={(keys) => {
+                      const selectedValue = Array.from(keys)[0];
+                      setFormData((prev) => ({
+                        ...prev,
+                        service: selectedValue || "",
+                      }));
+                      if (errors.service) {
+                        setErrors((prev) => ({ ...prev, service: "" }));
+                      }
+                    }}
+                    isInvalid={!!errors.service}
+                    errorMessage={errors.service}
+                    classNames={{
+                      trigger:
+                        "dark:bg-gray-800/50 bg-brand-white dark:border-gray-700 border-brand-secondary2/30 hover:border-brand-secondary/50 data-[open=true]:border-brand-secondary h-14",
+                      value: "dark:text-white text-brand-dark",
+                      popoverContent:
+                        "dark:bg-gray-800 bg-brand-white dark:text-white text-brand-dark dark:border-gray-700 border-brand-secondary2/30",
+                      listboxWrapper: "max-h-[400px]",
+                    }}
                   >
-                    <option value="" className="text-black">
-                      Service
-                    </option>
-                    <option value="security-consulting" className="text-black">
+                    <SelectItem
+                      key="security-consulting"
+                      value="security-consulting"
+                    >
                       Security Consulting
-                    </option>
-                    <option value="threat-detection" className="text-black">
+                    </SelectItem>
+                    <SelectItem key="threat-detection" value="threat-detection">
                       Threat Detection
-                    </option>
-                    <option value="penetration-testing" className="text-black">
+                    </SelectItem>
+                    <SelectItem
+                      key="penetration-testing"
+                      value="penetration-testing"
+                    >
                       Penetration Testing
-                    </option>
-                    <option value="incident-response" className="text-black">
+                    </SelectItem>
+                    <SelectItem
+                      key="incident-response"
+                      value="incident-response"
+                    >
                       Incident Response
-                    </option>
-                    <option value="employee-training" className="text-black">
+                    </SelectItem>
+                    <SelectItem
+                      key="employee-training"
+                      value="employee-training"
+                    >
                       Employee Training
-                    </option>
-                    <option value="data-protection" className="text-black">
+                    </SelectItem>
+                    <SelectItem key="data-protection" value="data-protection">
                       Data Protection
-                    </option>
-                  </select>
+                    </SelectItem>
+                  </Select>
                   {errors.service && (
                     <span className="text-brand-secondary text-xs mt-1 flex items-center">
                       <span className="mr-1">*</span>
@@ -209,24 +241,25 @@ const ContactForm = () => {
 
               {/* Message */}
               <div>
-                <textarea
+                <Textarea
                   name="message"
+                  label="Message"
+                  labelPlacement="outside"
                   placeholder="Write Message"
-                  rows="4"
+                  minRows={4}
                   value={formData.message}
                   onChange={handleInputChange}
-                  className={`w-full bg-transparent text-white placeholder-gray-400 px-4 py-3 rounded-3xl border border-gray-600 ${
-                    errors.message
-                      ? "border-brand-secondary"
-                      : "border-gray-600"
-                  } focus:border-brand-secondary focus:outline-none transition-colors resize-none`}
-                ></textarea>
-                {errors.message && (
-                  <span className="text-brand-secondary text-xs mt-1 flex items-center">
-                    <span className="mr-1">*</span>
-                    {errors.message}
-                  </span>
-                )}
+                  variant="bordered"
+                  size="lg"
+                  isInvalid={!!errors.message}
+                  errorMessage={errors.message}
+                  classNames={{
+                    input:
+                      "dark:text-white text-brand-dark dark:placeholder:text-gray-500 placeholder:text-brand-muted",
+                    inputWrapper:
+                      "dark:bg-gray-800/50 bg-brand-white dark:border-gray-700 border-brand-secondary2/30 hover:border-brand-secondary/50 focus-within:!border-brand-secondary min-h-[120px]",
+                  }}
+                />
               </div>
 
               {/* Submit Button */}

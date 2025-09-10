@@ -31,7 +31,7 @@ const Footer = () => {
   const quickLinks = [
     { title: "About Us", href: "/about" },
     { title: "Our Services", href: "/services" },
-    { title: "In The News", href: "/news" },
+    { title: "Press", href: "/news" },
     { title: "Our Projects", href: "/projects" },
     { title: "Contact Us", href: "/contact-us" },
   ];
@@ -186,7 +186,7 @@ const Footer = () => {
                   </div>
                   <div>
                     <h4 className="text-brand-secondary kumbh_sans_semibold text-lg mb-1">
-                      Phone
+                      Phone#
                     </h4>
                     <div className="text-gray-500 dark:text-gray-400 text-base space-y-1">
                       <a href="tel:+2018918201">+201-891-8201</a>

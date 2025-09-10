@@ -116,7 +116,8 @@ export default function NavHeader() {
     { name: "Services", href: "/services" },
     { name: "IT Services", href: "/it-services" },
     { name: "Projects", href: "/projects" },
-    { name: "News", href: "/all-news" },
+    { name: "Press", href: "/all-news" },
+    { name: "Career", href: "/career" },
     { name: "Contact Us", href: "/contact-us" },
   ];
 
@@ -208,7 +209,7 @@ export default function NavHeader() {
                           : "text-white hover:text-brand-secondary"
                       } 
                       cursor-pointer text-base no-underline kumbh_sans_medium transition-all duration-300
-                      flex items-center gap-2 group
+                      flex items-center gap-1 group
                     `}
                   >
                     <span className="text-sm transition-transform duration-300">

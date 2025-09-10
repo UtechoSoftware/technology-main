@@ -1,54 +1,22 @@
 "use client";
 import { person1, person2, person3 } from "@/public/assets/images";
-import { slideIn } from "@/utils/motion";
 import { Drawer, DrawerBody, DrawerContent, DrawerHeader } from "@heroui/react";
-import { motion } from "framer-motion";
 import { Filter } from "lucide-react";
-import Image from "next/image";
 import { useParams } from "next/navigation";
 import { useState } from "react";
-import { IoChatbubblesSharp } from "react-icons/io5";
-import { MdReply } from "react-icons/md";
-import { motionDelay } from "../api/axiosInstance";
 import Article1 from "./article1";
 import Article2 from "./article2";
 import Article3 from "./article3";
-import CommentSection from "./commentSection";
 import NewsSidebar from "./newsSidebar";
+import Article4 from "./article4";
+import Article5 from "./article5";
+import Article6 from "./article6";
+import Article7 from "./article7";
 
 export default function BlogSection() {
   const [open, setOpen] = useState(false);
   const params = useParams();
   const { slug } = params;
-  const comments = [
-    {
-      id: 1,
-      name: "Michel Smith",
-      date: "24 Dec, 2024 04:20pm",
-      avatar: "/api/placeholder/60/60",
-      comment:
-        "Secur's service was excellent! They handled my cybersecurity needs efficiently, with great customer support.",
-      avatar: person2,
-    },
-    {
-      id: 2,
-      name: "Sarah Rahman",
-      date: "24 Dec, 2024 04:20pm",
-      avatar: "/api/placeholder/60/60",
-      comment:
-        "Secur's service was outstanding! They provided reliable cybersecurity with quick, excellent support.",
-      avatar: person1,
-    },
-    {
-      id: 3,
-      name: "William John",
-      date: "24 Dec, 2024 04:20pm",
-      avatar: "/api/placeholder/60/60",
-      comment:
-        "Secur ensured robust cybersecurity with quick, professional support every step of the way.",
-      avatar: person3,
-    },
-  ];
 
   return (
     <div className="bg-brand-ligthSecondaryDark dark:bg-gradienttbsmooth overflow-hidden">
@@ -72,6 +40,22 @@ export default function BlogSection() {
             )}
             {slug === "smart-access-control-security-meets-convenience" && (
               <Article3 />
+            )}
+            {slug ===
+              "how-protection-technologies-llc-delivers-security-you-can-trust" && (
+              <Article4 />
+            )}
+            {slug ===
+              "leading-with-integrity-the-business-philosophy-behind-protection-technologies-llc" && (
+              <Article5 />
+            )}
+            {slug ===
+              "security-meets-vision-how-mike-singers-principles-drive-protection-technologies-llcs-cutting-edge-solutions" && (
+              <Article6 />
+            )}
+            {slug ===
+              "from-east-coast-leader-to-national-contender-how-protection-technologies-llc-is-redefining-modern-security" && (
+              <Article7 />
             )}
 
             {/* <div className="my-6 dark:bg-cardGradient bg-brand-ligthSecondary rounded-3xl p-4 md:p-8">
