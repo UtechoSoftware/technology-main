@@ -22,15 +22,14 @@ const ContactAddress = () => {
               </p>
 
               <p className="kumbh_sans_regular text-brand-secondary dark:text-brand-white mb-1">
-                Other Locations:
+                Georgia Location
               </p>
               <p className="text-gray-500 dark:text-gray-400 text-base leading-relaxed mb-3">
-                1990 Main Street Unit 750 Sarasota, FL 34236
+                260 Peachtree Street NW <br/>
+                Suite 2200 <br/>
+                Atlanta, GA 30303
               </p>
-              <p className="text-gray-500 dark:text-gray-400 text-base leading-relaxed">
-                Tower 101 building 17th Floor 101 NE 3rd Ave, Fort Lauderdale,
-                FL 33301
-              </p>
+
             </div>
           </div>
 

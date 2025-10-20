@@ -44,7 +44,7 @@ const Footer = () => {
           alt="Overlay"
           fill
           className="object-cover  dark:block opacity-50 dark:opacity-50 z-0"
-          // className="object-cover  dark:block opacity-30 dark:opacity-50 z-0"
+        // className="object-cover  dark:block opacity-30 dark:opacity-50 z-0"
         />
         <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 py-8 md:py-16 dark:border-t dark:border-gray-800 border-t border-gray-200">
           {/* Main Footer Content */}
@@ -175,6 +175,14 @@ const Footer = () => {
                     <p className="text-gray-500 dark:text-gray-400 text-base leading-relaxed">
                       Tower 101 building 17th Floor 101 NE 3rd Ave, Fort
                       Lauderdale, FL 33301.
+                    </p>
+                    <p className="text-gray-500 dark:text-gray-400 text-base leading-relaxed">
+                      <h4 className="text-brand-secondary kumbh_sans_semibold text-lg mb-1">
+                        Georgia Location :
+                      </h4>
+                      260 Peachtree Street NW <br />
+                      Suite 2200<br />
+                      Atlanta,GA30303
                     </p>
                   </div>
                 </div>
