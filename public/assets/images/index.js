@@ -87,6 +87,13 @@ import project25 from "./project25.jpeg";
 import project26 from "./project26.jpeg";
 import project27 from "./project27.jpeg";
 import project28 from "./project28.jpeg";
+import p1 from "./p-1.jpg";
+import p2 from "./p-2.jpg";
+import p3 from "./p-3.jpg";
+import p4 from "./p-4.jpg";
+import p5 from "./p-5.jpg";
+import p6 from "./p-6.jpg";
+import p7 from "./p-7.jpg";
 import Mike from "./mike.jpeg";
 import Patricia from "./patricia.jpeg";
 import Nerizza from "./nerizza.jpeg";
@@ -238,4 +245,11 @@ export {
   press4Sub4,
   press4Sub5,
   careerBanner,
+  p1,
+  p2,
+  p3,
+  p4,
+  p5,
+  p6,
+  p7
 };

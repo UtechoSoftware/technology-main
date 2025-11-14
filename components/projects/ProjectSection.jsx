@@ -32,7 +32,13 @@ import {
   project25,
   project26,
   project27,
-  project28,
+  project28, p1,
+  p2,
+  p3,
+  p4,
+  p5,
+  p6,
+  p7
 } from "@/public/assets/images";
 import Image from "next/image";
 import { motionDelay } from "../api/axiosInstance";
@@ -46,6 +52,55 @@ const ProjectCardsWithPagination = () => {
   const itemsPerPage = 9;
 
   const projects = [
+    {
+      id: 1,
+      title: "Project Big House",
+      category: "Multi Family",
+      image: p1,
+      type: "living",
+    },
+    {
+      id: 1,
+      title: "Project Big House",
+      category: "Multi Family",
+      image: p2,
+      type: "living",
+    },
+    {
+      id: 1,
+      title: "Project Big House",
+      category: "Multi Family",
+      image: p3,
+      type: "living",
+    },
+    {
+      id: 1,
+      title: "Project Big House",
+      category: "Multi Family",
+      image: p4,
+      type: "living",
+    },
+    {
+      id: 1,
+      title: "Project Big House",
+      category: "Multi Family",
+      image: p5,
+      type: "living",
+    },
+    {
+      id: 1,
+      title: "Project Big House",
+      category: "Multi Family",
+      image: p6,
+      type: "living",
+    },
+    {
+      id: 1,
+      title: "Project Big House",
+      category: "Multi Family",
+      image: p7,
+      type: "living",
+    },
     {
       id: 1,
       title: "Project Big House",
@@ -320,11 +375,10 @@ const ProjectCardsWithPagination = () => {
           <button
             onClick={handlePrevPage}
             disabled={currentPage === 1}
-            className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-200 ${
-              currentPage === 1
+            className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-200 ${currentPage === 1
                 ? "bg-gray-700 text-gray-500 cursor-not-allowed"
                 : "bg-gray-700 text-gray-300 hover:bg-gray-600 hover:text-white"
-            }`}
+              }`}
           >
             <ChevronLeft size={20} />
           </button>
@@ -333,11 +387,10 @@ const ProjectCardsWithPagination = () => {
             <button
               key={index + 1}
               onClick={() => handlePageChange(index + 1)}
-              className={`w-12 h-12 rounded-full flex items-center justify-center kumbh_sans_semibold transition-all duration-200 ${
-                currentPage === index + 1
+              className={`w-12 h-12 rounded-full flex items-center justify-center kumbh_sans_semibold transition-all duration-200 ${currentPage === index + 1
                   ? "bg-brand-secondary text-white shadow-lg transform scale-110"
                   : "bg-brand-ligthSecondaryDark dark:bg-brand-secondary/10 text-brand-black dark:text-brand-muted hover:bg-brand-secondary hover:text-white"
-              }`}
+                }`}
             >
               {index + 1}
             </button>
@@ -347,11 +400,10 @@ const ProjectCardsWithPagination = () => {
           <button
             onClick={handleNextPage}
             disabled={currentPage === totalPages}
-            className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-200 ${
-              currentPage === totalPages
+            className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-200 ${currentPage === totalPages
                 ? "bg-gray-700 text-gray-500 cursor-not-allowed"
                 : "bg-gray-700 text-gray-300 hover:bg-gray-600 hover:text-white"
-            }`}
+              }`}
           >
             <ChevronRight size={20} />
           </button>
