@@ -107,9 +107,6 @@ export default function NavHeader() {
   const [supportModalOpen, setSupportModalOpen] = useState(false);
   const pathname = usePathname();
 
-  // Check if current page is home
-  const isHome = pathname === "/";
-
   const menuItems = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
@@ -118,6 +115,7 @@ export default function NavHeader() {
     { name: "Projects", href: "/projects" },
     { name: "Press", href: "/all-news" },
     { name: "Career", href: "/career" },
+    { name: "Partnerships", href: "/partnerships" },
     { name: "Contact Us", href: "/contact-us" },
   ];
 
@@ -178,7 +176,7 @@ export default function NavHeader() {
         //   opacity: "99%",
         // }}
       >
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-[1500px] mx-auto px-4">
           <nav className="flex justify-between items-center w-full">
             {/* Logo */}
             {/* <Image src={logo} alt="Logo" className="w-auto h-16" /> */}

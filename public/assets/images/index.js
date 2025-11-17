@@ -126,6 +126,18 @@ import press4Sub3 from "./press4Sub3.webp";
 import press4Sub4 from "./press4Sub4.webp";
 import press4Sub5 from "./press4Sub5.webp";
 import careerBanner from "./careerBanner.jpeg";
+import jets from "./jets.png";
+import dolphins from "./dolphins.jpg";
+import brooklyn from "./brooklyn.jpg";
+import njdevil from "./njdevil.jpg";
+import november from "./november.png";
+import december from "./december.png";
+import devil1 from "./devil1.png";
+import devil2 from "./devil2.png";
+import devil3 from "./devil3.png";
+import jet1 from "./jet1.png";
+import jet2 from "./jet2.png";
+import jet3 from "./jet3.png";
 
 export {
   pagesectionImage,
@@ -251,5 +263,17 @@ export {
   p4,
   p5,
   p6,
-  p7
+  p7,
+  jets,
+  dolphins,
+  brooklyn,
+  njdevil,
+  november,
+  december,
+  devil1,
+  devil2,
+  devil3,
+  jet1,
+  jet2,
+  jet3,
 };
