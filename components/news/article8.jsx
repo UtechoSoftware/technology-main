@@ -160,8 +160,10 @@ export default function Article1() {
             education, art, religion and entertainment. Who’s Who in
             America®remains an essential biographical source for thousands of
             researchers, journalists, librarians and executive search firms
-            around the world. The suite of Marquis® publications can be viewed
-            at the official Marquis Who’s Who® website, at{" "}
+            around the world.
+            <br />
+            The suite of Marquis® publications can be viewed at the official
+            Marquis Who’s Who® website, at{" "}
             <a
               href="https://www.24-7pressrelease.com/press-release-service/527685"
               target="_blank"

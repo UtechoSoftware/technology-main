@@ -27,46 +27,23 @@ const brands = [
 export default function Brands2() {
   const { theme } = useTheme();
 
-  // Duplicate brands array for seamless loop
-  const duplicatedBrands = [
-    ...brands,
-    ...brands,
-    ...brands,
-    ...brands,
-    ...brands,
-    ...brands,
-    ...brands,
-    ...brands,
-    ...brands,
-    ...brands,
-    ...brands,
-    ...brands,
-  ];
-
   return (
     <motion.section
-      className="px-4 pt-6 sm:pt-12 sm:px-12 overflow-hidden dark:bg-brand-secondaryDark bg-brand-ligthSecondaryDark"
+      className="px-4 pt-6 sm:pt-12 sm:px-12 dark:bg-brand-secondaryDark bg-brand-ligthSecondaryDark max-w-4xl mx-auto"
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.15 }}
     >
-      <div className="relative xl:container mx-auto overflow-hidden">
-        <motion.div
-          className="flex items-center gap-12 whitespace-nowrap"
-          animate={{ x: ["0%", "-100%"] }}
-          transition={{
-            repeat: Infinity,
-            duration: 10,
-            ease: "linear",
-          }}
-        >
-          {duplicatedBrands.map((brand, index) => (
+      <div className="xl:container mx-auto">
+        {/* Grid layout: 4 columns until md, then 2 columns */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 items-center justify-items-center">
+          {brands.map((brand, index) => (
             <motion.img
               key={`brand-${index}`}
               src={theme === "dark" ? brand.dark : brand.light}
               alt={`brand-${index}`}
-              className="max-w-[120px] max-h-[100px] w-auto inline-block mb-0"
+              className="w-[150px] sm:w-[200px] h-[60px] sm:h-[70px] rounded-md"
               variants={slideIn(
                 index % 2 === 0 ? "up" : "down",
                 motionDelay * (index + 1),
@@ -74,7 +51,7 @@ export default function Brands2() {
               )}
             />
           ))}
-        </motion.div>
+        </div>
       </div>
     </motion.section>
   );
