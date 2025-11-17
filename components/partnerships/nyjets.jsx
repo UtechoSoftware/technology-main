@@ -4,6 +4,7 @@ import {
   jet1,
   jet2,
   jet3,
+  jetPersonal,
   jets,
 } from "@/public/assets/images";
 import { fadeIn, matrixGlitch, staggerContainer } from "@/utils/motion";
@@ -22,7 +23,11 @@ const NyJets = () => {
     >
       <div className="max-w-7xl relative mx-auto">
         <div className="">
-          <Image src={jets} alt="Partnerships" className=" w-[200px] mx-auto" />
+          <Image
+            src={jetPersonal}
+            alt="Partnerships"
+            className=" w-[200px] mx-auto"
+          />
         </div>
         <motion.p
           variants={matrixGlitch(motionDelay)}
@@ -32,7 +37,7 @@ const NyJets = () => {
           Small Business Partnership
         </motion.p>
         {/* Main content */}
-        <div className="relative z-10 py-10">
+        <div className="relative z-10 py-16">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div>

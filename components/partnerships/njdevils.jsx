@@ -4,6 +4,7 @@ import {
   devil1,
   devil2,
   devil3,
+  devilPersonal,
   njdevil,
 } from "@/public/assets/images";
 import { fadeIn, matrixGlitch, staggerContainer } from "@/utils/motion";
@@ -23,7 +24,7 @@ const NjDevils = () => {
       <div className="max-w-7xl relative mx-auto">
         <div className="">
           <Image
-            src={njdevil}
+            src={devilPersonal}
             alt="Partnerships"
             className=" w-[200px] mx-auto"
           />
@@ -36,7 +37,7 @@ const NjDevils = () => {
           Affiliate Partnership with the New Jersey Devils
         </motion.p>
         {/* Main content */}
-        <div className="relative z-10 pt-10">
+        <div className="relative z-10 pt-16">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div>

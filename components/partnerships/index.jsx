@@ -5,6 +5,7 @@ import clsx from "clsx";
 import Calender from "./calender";
 import NjDevils from "./njdevils";
 import NyJets from "./nyjets";
+import Brands2 from "../home/brands2";
 
 const tabs = [
   { id: "calendar", label: "Activation Calender", Component: Calender },
@@ -58,6 +59,7 @@ export default function Partnerships() {
           <ActiveComponent />
         </div>
       </div>
+      <Brands2 />
     </section>
   );
 }

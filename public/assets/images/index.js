@@ -138,6 +138,8 @@ import devil3 from "./devil3.png";
 import jet1 from "./jet1.png";
 import jet2 from "./jet2.png";
 import jet3 from "./jet3.png";
+import jetPersonal from "./jetPersonal.png";
+import devilPersonal from "./devilPersonal.png";
 
 export {
   pagesectionImage,
@@ -276,4 +278,6 @@ export {
   jet1,
   jet2,
   jet3,
+  jetPersonal,
+  devilPersonal,
 };
