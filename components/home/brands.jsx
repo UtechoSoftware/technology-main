@@ -54,6 +54,22 @@ const brands = [
     dark: "/assets/svg/brand13.svg",
     light: "/assets/svg/brand13.svg",
   },
+  {
+    dark: "/assets/images/brooklyn.jpg",
+    light: "/assets/images/brooklyn.jpg",
+  },
+  {
+    dark: "/assets/images/njdevil.jpg",
+    light: "/assets/images/njdevil.jpg",
+  },
+  {
+    dark: "/assets/images/jets.png",
+    light: "/assets/images/jets.png",
+  },
+  {
+    dark: "/assets/images/dolphins.jpg",
+    light: "/assets/images/dolphins.jpg",
+  },
 ];
 
 export default function Brands() {
@@ -86,7 +102,7 @@ export default function Brands() {
       <div className="relative xl:container mx-auto overflow-hidden">
         <motion.div
           className="flex items-center gap-12 whitespace-nowrap"
-          animate={{ x: ["0%", "-50%"] }}
+          animate={{ x: ["0%", "-100%"] }}
           transition={{
             repeat: Infinity,
             duration: 10,
@@ -98,7 +114,7 @@ export default function Brands() {
               key={`brand-${index}`}
               src={theme === "dark" ? brand.dark : brand.light}
               alt={`brand-${index}`}
-              className="max-w-[120px] w-auto inline-block mb-0"
+              className="max-w-[120px] max-h-[100px] w-auto inline-block mb-0"
               variants={slideIn(
                 index % 2 === 0 ? "up" : "down",
                 motionDelay * (index + 1),

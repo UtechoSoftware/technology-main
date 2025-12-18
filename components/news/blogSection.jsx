@@ -12,6 +12,7 @@ import Article4 from "./article4";
 import Article5 from "./article5";
 import Article6 from "./article6";
 import Article7 from "./article7";
+import Article8 from "./article8";
 
 export default function BlogSection() {
   const [open, setOpen] = useState(false);
@@ -30,6 +31,10 @@ export default function BlogSection() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
           {/* Main Content */}
           <div className="lg:col-span-3">
+            {slug ===
+              "marquis-whos-who-honors-mike-singer-for-expertise-in-security-services" && (
+              <Article8 />
+            )}
             {slug ===
               "latch-announces-first-building-wide-installation-of-works-with-latch-marks-usa-locks" && (
               <Article1 />
@@ -57,68 +62,6 @@ export default function BlogSection() {
               "from-east-coast-leader-to-national-contender-how-protection-technologies-llc-is-redefining-modern-security" && (
               <Article7 />
             )}
-
-            {/* <div className="my-6 dark:bg-cardGradient bg-brand-ligthSecondary rounded-3xl p-4 md:p-8">
-              <div className="flex items-center space-x-3 mb-8">
-                <IoChatbubblesSharp className="h-7 w-7 text-brand-secondary" />
-                <h2 className="text-2xl kumbh_sans_semibold text-brand-dark dark:text-white">
-                  Comments{" "}
-                  <span className="text-brand-dark dark:text-white">(03)</span>
-                </h2>
-              </div>
-
-              <div className="space-y-4 md:space-y-6">
-                {comments.map((comment, key) => (
-                  <motion.div
-                    key={key}
-                    className=""
-                    initial="hidden"
-                    whileInView="show"
-                    viewport={{ once: true, amount: 0.15 }}
-                    variants={slideIn("up", motionDelay * key, true)}
-                  >
-                    <div
-                      className={`flex items-start ml-auto gap-4 border-[0.5px] border-brand-muted p-4 md:p-5 rounded-3xl ${
-                        key % 2 === 0 ? "w-full" : "md:w-11/12"
-                      }`}
-                    >
-                      <div className="flex-shrink-0">
-                        <Image
-                          src={comment.avatar}
-                          alt={comment.name}
-                          className="w-16 h-16 md:w-20 md:h-20 rounded-xl"
-                        />
-                      </div>
-
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-center justify-between mb-2">
-                          <div className="mb-2 md:mb-4">
-                            <h3 className="text-xl kumbh_sans_semibold text-brand-dark dark:text-white mb-1">
-                              {comment.name}
-                            </h3>
-                            <p className="text-brand-dark dark:text-brand-white kumbh_sans_regular text-sm">
-                              {comment.date}
-                            </p>
-                          </div>
-
-                          <button className="flex items-center space-x-1 text-brand-secondary transition-colors group">
-                            <MdReply className="h-5 w-5 transform group-hover:scale-110 transition-transform" />
-                            <span className="kumbh_sans_regular text-sm uppercase tracking-wider">
-                              REPLY
-                            </span>
-                          </button>
-                        </div>
-
-                        <p className="text-brand-dark dark:text-brand-white kumbh_sans_regular leading-relaxed text-base">
-                          {comment.comment}
-                        </p>
-                      </div>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </div> */}
-            {/* <CommentSection /> */}
           </div>
 
           {/* Desktop Sidebar */}

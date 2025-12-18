@@ -11,6 +11,7 @@ import { motionDelay } from "../api/axiosInstance";
 import SectionHeading from "../common/sectionHeading";
 import {
   accesscontrol,
+  Mike,
   news,
   press1,
   press2,
@@ -30,6 +31,15 @@ export default function NewsSection({ isHome = false }) {
   const newsData = [
     {
       id: 1,
+      date: "December 11, 2025",
+      slug: "marquis-whos-who-honors-mike-singer-for-expertise-in-security-services",
+      title:
+        "Marquis Who's Who Honors Mike Singer for Expertise in Security Services",
+      image: Mike,
+      readTime: "5 min read",
+    },
+    {
+      id: 2,
       date: "04 September 2025",
       slug: "how-protection-technologies-llc-delivers-security-you-can-trust",
       title:
@@ -38,7 +48,7 @@ export default function NewsSection({ isHome = false }) {
       readTime: "5 min read",
     },
     {
-      id: 2,
+      id: 3,
       date: "06 September 2025",
       slug: "leading-with-integrity-the-business-philosophy-behind-protection-technologies-llc",
       title:
@@ -47,7 +57,7 @@ export default function NewsSection({ isHome = false }) {
       readTime: "2 min read",
     },
     {
-      id: 3,
+      id: 4,
       date: "06 September 2025",
       slug: "security-meets-vision-how-mike-singers-principles-drive-protection-technologies-llcs-cutting-edge-solutions",
       title:
@@ -56,7 +66,7 @@ export default function NewsSection({ isHome = false }) {
       readTime: "2 min read",
     },
     {
-      id: 4,
+      id: 5,
       date: "04 September 2025",
       slug: "from-east-coast-leader-to-national-contender-how-protection-technologies-llc-is-redefining-modern-security",
       title:
@@ -65,7 +75,7 @@ export default function NewsSection({ isHome = false }) {
       readTime: "5 min read",
     },
     {
-      id: 5,
+      id: 6,
       date: "December 26, 2025",
       slug: "latch-announces-first-building-wide-installation-of-works-with-latch-marks-usa-locks",
       title:
@@ -74,7 +84,7 @@ export default function NewsSection({ isHome = false }) {
       readTime: "5 min read",
     },
     {
-      id: 6,
+      id: 7,
       date: "March 05, 2025",
       slug: "why-247-remote-video-surveillance-is-essential-for-modern-businesses",
       title:
@@ -83,7 +93,7 @@ export default function NewsSection({ isHome = false }) {
       readTime: "3 min read",
     },
     {
-      id: 7,
+      id: 8,
       date: "March 05, 2025",
       slug: "smart-access-control-security-meets-convenience",
       title: "Smart Access Control: Security Meets Convenience",
