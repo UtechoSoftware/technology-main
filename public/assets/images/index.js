@@ -94,16 +94,17 @@ import p4 from "./p-4.jpg";
 import p5 from "./p-5.jpg";
 import p6 from "./p-6.jpg";
 import p7 from "./p-7.jpg";
-import Mike from "./mike.jpeg";
-import Patricia from "./patricia.jpeg";
+
+import Mike from "./teams/1768783708145.jpeg";
+import Patricia from "./teams/1769368166754.png";
 import Nerizza from "./nerizza.jpeg";
 import Todd from "./todd.jpeg";
-import Nicole from "./nicole.jpeg";
-import Rosemery from "./rosemery.jpeg";
-import Diana from "./diana.jpeg";
-import Cathleen from "./cathleen.jpeg";
-import Tobie from "./Tobie.jpeg";
-import Marichelle from "./Marichelle.jpeg";
+import Nicole from "./teams/1768601940997.jpeg";
+import Rosemery from "./teams/1768961671207.jpeg";
+import Diana from "./teams/1710643508773.jpeg";
+import Cathleen from "./teams/1757776262666.jpeg";
+import Tobie from "./teams/1676271500937.jpeg";
+import Marichelle from "./teams/1764087270391.jpeg";
 import Hernan from "./Hernan.jpeg";
 
 import Placeholder from "./placeholder.webp";
