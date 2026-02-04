@@ -8,7 +8,7 @@ import NyJets from "./nyjets";
 import Brands2 from "../home/brands2";
 
 const tabs = [
-  { id: "calendar", label: "Activation Calender", Component: Calender },
+  // { id: "calendar", label: "Activation Calender", Component: Calender },
   { id: "nj-devils", label: "NJ Devils", Component: NjDevils },
   { id: "ny-jets", label: "NY Jets", Component: NyJets },
 ];
@@ -18,7 +18,7 @@ export default function Partnerships() {
 
   const ActiveComponent = useMemo(() => {
     const found = tabs.find((tab) => tab.id === activeTab);
-    return found ? found.Component : Calender;
+    return found ? found.Component : '';
   }, [activeTab]);
 
   return (
