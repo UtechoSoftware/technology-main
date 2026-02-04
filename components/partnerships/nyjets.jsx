@@ -11,6 +11,7 @@ import { fadeIn, matrixGlitch, staggerContainer } from "@/utils/motion";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { motionDelay } from "../api/axiosInstance";
+import SbpPtSlider from "./sbpPtSlider";
 
 const NyJets = () => {
   return (
@@ -37,7 +38,7 @@ const NyJets = () => {
           Small Business Partnership
         </motion.p>
         {/* Main content */}
-        <div className="relative z-10 py-16">
+        <div className="relative z-10 pt-16">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div>
@@ -272,7 +273,7 @@ const NyJets = () => {
               </div>
             </div>
           </div>
-          <div className="mt-10">
+          {/* <div className="mt-10">
             <div className="">
               <div>
                 <h2 className="text-2xl font-bold mb-3">Important</h2>
@@ -317,8 +318,11 @@ const NyJets = () => {
                 </motion.p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
+      </div>
+      <div className="">
+        <SbpPtSlider />
       </div>
     </motion.div>
   );

@@ -11,6 +11,7 @@ import { fadeIn, matrixGlitch, staggerContainer } from "@/utils/motion";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { motionDelay } from "../api/axiosInstance";
+import SbpPtSlider from "./sbpPtSlider";
 
 const NjDevils = () => {
   return (
@@ -230,7 +231,8 @@ const NjDevils = () => {
             </div>
           </div>
           <div className="mt-10">
-            <div className="">
+            {/* <SbpPtSlider /> */}
+            {/* <div className="">
               <div>
                 <h2 className="text-2xl font-bold mb-3">Important</h2>
                 <motion.p
@@ -273,9 +275,12 @@ const NjDevils = () => {
                   disclaimer.
                 </motion.p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
+      </div>
+      <div className="mt-10">
+        <SbpPtSlider />
       </div>
     </motion.div>
   );
