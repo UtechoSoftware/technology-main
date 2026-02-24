@@ -11,7 +11,7 @@ import MiamiDolphins from "./miami";
 import BrooklynNets from "./nets";
 
 const tabs = [
-  { id: "calendar", label: "Activation Calender", Component: Calender },
+  // { id: "calendar", label: "Activation Calender", Component: Calender },
   { id: "nj-devils", label: "NJ Devils", Component: NjDevils },
   { id: "ny-jets", label: "NY Jets", Component: NyJets },
   { id: "Altana-Falcons", label: "Altana Falcons", Component: AltanaFalcons },
@@ -24,7 +24,7 @@ export default function Partnerships() {
 
   const ActiveComponent = useMemo(() => {
     const found = tabs.find((tab) => tab.id === activeTab);
-    return found ? found.Component : Calender;
+    return found ? found.Component : '';
   }, [activeTab]);
 
   return (
