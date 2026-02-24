@@ -13,6 +13,7 @@ import Article5 from "./article5";
 import Article6 from "./article6";
 import Article7 from "./article7";
 import Article8 from "./article8";
+import Article9 from "./article9";
 
 export default function BlogSection() {
   const [open, setOpen] = useState(false);
@@ -31,6 +32,10 @@ export default function BlogSection() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
           {/* Main Content */}
           <div className="lg:col-span-3">
+            {slug ===
+              "marquis-whos-who-honors-mike-singer-as-a-top-entrepreneur" && (
+              <Article9 />
+            )}
             {slug ===
               "marquis-whos-who-honors-mike-singer-for-expertise-in-security-services" && (
               <Article8 />

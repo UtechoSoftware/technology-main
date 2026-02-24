@@ -102,6 +102,8 @@ import nets1 from "./nets1.jpg";
 import nets2 from "./nets2.jpg";
 import nets3 from "./nets3.jpg";
 
+import marquis from "./marquis.png";
+
 import p1 from "./p-1.jpg";
 import p2 from "./p-2.jpg";
 import p3 from "./p-3.jpg";
@@ -171,6 +173,8 @@ export {
   nets1,
   nets2,
   nets3,
+  
+  marquis,
 
   pagesectionImage,
   pagesectionGif,

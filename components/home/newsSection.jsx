@@ -18,6 +18,7 @@ import {
   press3,
   press4,
   remote,
+  marquis,
 } from "@/public/assets/images";
 import Image from "next/image";
 import Link from "next/link";
@@ -29,6 +30,15 @@ export default function NewsSection({ isHome = false }) {
   const pathname = usePathname();
 
   const newsData = [
+    {
+      id: 0,
+      date: "February 19, 2026",
+      slug: "marquis-whos-who-honors-mike-singer-as-a-top-entrepreneur",
+      title:
+        "Marquis Who's Who Honors Mike Singer as a Top Entrepreneur",
+      image: marquis,
+      readTime: "5 min read",
+    },
     {
       id: 1,
       date: "December 11, 2025",
