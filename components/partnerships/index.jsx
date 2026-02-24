@@ -6,11 +6,17 @@ import Calender from "./calender";
 import NjDevils from "./njdevils";
 import NyJets from "./nyjets";
 import Brands2 from "../home/brands2";
+import AltanaFalcons from "./falcon";
+import MiamiDolphins from "./miami";
+import BrooklynNets from "./nets";
 
 const tabs = [
   { id: "calendar", label: "Activation Calender", Component: Calender },
   { id: "nj-devils", label: "NJ Devils", Component: NjDevils },
   { id: "ny-jets", label: "NY Jets", Component: NyJets },
+  { id: "Altana-Falcons", label: "Altana Falcons", Component: AltanaFalcons },
+  { id: "Brooklyn-Nets", label: "Brooklyn Nets", Component: BrooklynNets },
+  { id: "Miami-Dolphins", label: "Miami Dolphins", Component: MiamiDolphins },
 ];
 
 export default function Partnerships() {

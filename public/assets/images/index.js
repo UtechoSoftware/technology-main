@@ -87,6 +87,21 @@ import project25 from "./project25.jpeg";
 import project26 from "./project26.jpeg";
 import project27 from "./project27.jpeg";
 import project28 from "./project28.jpeg";
+//falcons
+import falcons0 from "./falcons-0.jpg";
+import falcons1 from "./falcons-1.jpg";
+import falcons2 from "./falcons-2.jpg";
+import falcons3 from "./falcons-3.jpg";
+//miami
+import miami0 from "./miami0.jpg";
+import miami1 from "./miami1.jpg";
+import miami2 from "./miami2.jpg";
+//nets
+import nets0 from "./nets0.jpg";
+import nets1 from "./nets1.jpg";
+import nets2 from "./nets2.jpg";
+import nets3 from "./nets3.jpg";
+
 import p1 from "./p-1.jpg";
 import p2 from "./p-2.jpg";
 import p3 from "./p-3.jpg";
@@ -143,6 +158,20 @@ import jetPersonal from "./jetPersonal.png";
 import devilPersonal from "./devilPersonal.png";
 
 export {
+  falcons0,
+  falcons1,
+  falcons2,
+  falcons3,
+  
+  miami0,
+  miami1,
+  miami2,
+ 
+  nets0,
+  nets1,
+  nets2,
+  nets3,
+
   pagesectionImage,
   pagesectionGif,
   avatar3,
