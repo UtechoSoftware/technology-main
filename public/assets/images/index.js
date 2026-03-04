@@ -112,7 +112,7 @@ import p5 from "./p-5.jpg";
 import p6 from "./p-6.jpg";
 import p7 from "./p-7.jpg";
 
-import Mike from "./teams/1768783708145.jpeg";
+import Mike from "./teams/1771600092674.png";
 import Patricia from "./teams/1769368166754.png";
 import Nerizza from "./nerizza.jpeg";
 import Todd from "./todd.jpeg";
