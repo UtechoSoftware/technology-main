@@ -1,8 +1,14 @@
 import PageSection from "@/components/common/pageSection";
 import ContactSection from "@/components/home/ContactSection";
 import { privacy } from "@/public/assets/images";
+import { siteConfig } from "@/config/site";
 import Image from "next/image";
 import React from "react";
+
+export const metadata = {
+  title: "Privacy Policy",
+  description: `Privacy Policy for ${siteConfig.name}. How we collect, use, and protect your information when you use our website and services.`,
+};
 
 export default function Privacy() {
   return (
@@ -87,23 +93,16 @@ export default function Privacy() {
           <h3 className="text-xl kumbh_sans_semibold text-brand-dark dark:text-white mb-2">
             Cookies and Tracking Technologies
           </h3>
-          <p className="text-brand-muted text-base leading-relaxed">
-            We do not use cookies or any tracking mechanisms on our website or
-            mobile application.
-          </p>
           <p className="text-brand-muted text-base leading-relaxed mb-3">
-            Our site uses cookies and similar tools to:
+            Our website may use cookies and similar technologies to enable
+            essential site functionality, remember your preferences, and
+            improve your experience. We do not sell your data or use
+            third-party advertising cookies.
           </p>
-          <ul className="list-disc ms-5 mb-3">
-            <li>Understand user behavior</li>
-            <li>Track traffic patterns</li>
-            <li>Enable essential site functionality</li>
-          </ul>
           <p className="text-brand-muted text-base leading-relaxed mb-4">
-            Understand user behavior Track traffic patterns Enable essential
-            site functionality You can manage your cookie preferences through
-            your browser settings. Disabling cookies may affect site
-            performance.
+            You can manage your cookie preferences through your browser
+            settings. Disabling cookies may affect site performance or
+            certain features.
           </p>
           <h3 className="text-xl kumbh_sans_semibold text-brand-dark dark:text-white mb-2">
             Data Security

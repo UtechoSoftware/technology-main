@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { ThemeSwitch } from "./theme-switch";
 import SupportModal from "./common/modals/supportModal";
+import LazyVideo from "./ui/LazyVideo";
 
 // Custom Lock SVG Component
 const LockIcon = ({ isUnlocked, isAnimating, className }) => {
@@ -182,12 +183,14 @@ export default function NavHeader() {
             {/* <Image src={logo} alt="Logo" className="w-auto h-16" /> */}
             <Link href="/">
               <div className="cursor-pointer">
-                <video autoPlay muted loop className="h-32 md:h-36" playsInline>
-                  <source
-                    src="/assets/images/logoVideo1.mp4"
-                    type="video/mp4"
-                  />
-                </video>
+                <LazyVideo
+                  src="/assets/images/logoVideo1.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  className="h-32 md:h-36"
+                  rootMargin="50px"
+                />
               </div>
             </Link>
             {/* Desktop Menu */}

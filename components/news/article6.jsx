@@ -25,7 +25,7 @@ export default function Article6() {
       <div className="max-h-[450px] flex items-center justify-center">
         <Image
           src={press3}
-          alt="Article"
+          alt="Protection Technologies LLC security technology and Mike Singer"
           className="w-full max-h-[450px] object-top object-cover rounded-2xl"
         />
       </div>
@@ -63,7 +63,7 @@ export default function Article6() {
         <div className="max-h-[450px] flex items-center mb-4 justify-center">
           <Image
             src={press3Sub1}
-            alt="Article"
+            alt="Protection Technologies LLC security technology and Mike Singer"
             className="w-full max-h-[450px] object-contain rounded-2xl"
           />
         </div>
@@ -85,7 +85,7 @@ export default function Article6() {
         <div className="max-h-[450px] flex items-center mb-4 justify-center">
           <Image
             src={press2Sub1}
-            alt="Article"
+            alt="Protection Technologies LLC security technology and Mike Singer"
             className="w-full max-h-[450px] object-contain rounded-2xl"
           />
         </div>
@@ -107,7 +107,7 @@ export default function Article6() {
         <div className="max-h-[450px] flex items-center mb-4 justify-center">
           <Image
             src={press3Sub2}
-            alt="Article"
+            alt="Protection Technologies LLC security technology and Mike Singer"
             className="w-full max-h-[450px] object-contain rounded-2xl"
           />
         </div>

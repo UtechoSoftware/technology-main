@@ -124,8 +124,8 @@ export default function NewsSection({ isHome = false }) {
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between lg:mb-12">
           <div className="">
             <SectionHeading
-              heading1="New Blog"
-              heading2="Latest Press and Insights"
+              heading1="Press & Insights"
+              heading2="Latest from Protection Technologies, LLC"
               className="mb-6 flex items-center justify-center lg:items-start flex-col"
             />
             <motion.p
@@ -207,7 +207,7 @@ export default function NewsSection({ isHome = false }) {
         <div className="flex justify-center mt-8 lg:hidden">
           <Button
             as={Link}
-            href="/news"
+            href="/all-news"
             className="bg-brand-secondary border border-brand-secondary hover:bg-brand-secondaryDark text-white px-8 py-3 rounded-full kumbh_sans_semibold transition-colors duration-300 flex items-center gap-2"
           >
             See All Articles

@@ -14,9 +14,12 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { FiPhone } from "react-icons/fi";
 import { MdEmail, MdLocationOn } from "react-icons/md";
 import { useTheme } from "next-themes";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
   const { theme } = useTheme();
+  const pathname = usePathname();
+  const isPrivacyPage = pathname === "/privacy";
   const itSolutions = [
     { title: "Multi Family", href: "/services/multi-family" },
     { title: "Data Center", href: "/services/data-center" },
@@ -31,7 +34,7 @@ const Footer = () => {
   const quickLinks = [
     { title: "About Us", href: "/about" },
     { title: "Our Services", href: "/services" },
-    { title: "Press", href: "/news" },
+    { title: "Press", href: "/all-news" },
     { title: "Our Projects", href: "/projects" },
     { title: "Contact Us", href: "/contact-us" },
   ];
@@ -68,6 +71,8 @@ const Footer = () => {
                 <a
                   href="https://www.linkedin.com/company/protection-technologies-llc/"
                   target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Protection Technologies LLC on LinkedIn"
                   className="w-10 h-10 bg-gray-100 dark:bg-brand-secondary rounded-full flex items-center justify-center cursor-pointer group transition-colors duration-300 hover:scale-105"
                 >
                   <FaLinkedinIn
@@ -222,16 +227,27 @@ const Footer = () => {
         </div>
       </section>
       <div className="bg-brand-ligthSecondary dark:bg-[#341514]">
-        <div className="max-w-7xl mx-auto py-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="text-gray-600 dark:text-gray-400 text-base">
-            &copy; Copyright {new Date().getFullYear()} . All Rights Reserved.
+        <div className="max-w-7xl mx-auto py-8 flex flex-col md:flex-row justify-between items-center gap-4 px-4">
+          <div className="text-gray-600 dark:text-gray-400 text-base text-center md:text-left">
+            <span>&copy; {new Date().getFullYear()} Protection Technologies, LLC. All Rights Reserved.</span>
+            {isPrivacyPage && (
+              <span className="block mt-1 text-[0.65rem] opacity-[0.18] text-gray-500 dark:text-gray-500 tracking-widest select-none">
+                <a href="https://clearitpath.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-40 transition-opacity">clearitpath.com</a>
+              </span>
+            )}
           </div>
-          <div className="flex gap-6">
+          <div className="flex gap-6 flex-wrap justify-center">
             <Link
               href="/privacy"
               className="text-gray-600 dark:text-gray-400 hover:text-brand-secondary dark:hover:text-white text-base transition-colors duration-300"
             >
               Privacy Policy
+            </Link>
+            <Link
+              href="/terms-condition"
+              className="text-gray-600 dark:text-gray-400 hover:text-brand-secondary dark:hover:text-white text-base transition-colors duration-300"
+            >
+              Terms & Conditions
             </Link>
           </div>
         </div>

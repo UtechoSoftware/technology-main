@@ -2,6 +2,7 @@
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import LazyVideo from "@/components/ui/LazyVideo";
 
 export default function PageSection({
   title,
@@ -12,10 +13,6 @@ export default function PageSection({
   const router = useRouter();
   return (
     <div className="pageSection relative min-h-[400px] lg:min-h-[700px] flex items-center justify-center overflow-hidden pt-20">
-      {/* <div className="gif_overlay1"></div>
-      <div className="gif_overlay2"></div>
-      <div className="gif_overlay3"></div> */}
-      {/* Main Content */}
       {isImage ? (
         <Image
           src={url}
@@ -23,17 +20,14 @@ export default function PageSection({
           alt="Banner Image"
         />
       ) : (
-        <video
+        <LazyVideo
+          src={url}
           autoPlay
           muted
           loop
-          playsInline
           className="w-full h-full object-cover absolute top-0 left-0 z-0"
-          // style={{ mixBlendMode: "luminosity" }}
-        >
-          <source src={url} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+          aria-hidden
+        />
       )}
 
       <div className="relative z-20 text-center text-white">

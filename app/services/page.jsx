@@ -1,10 +1,16 @@
 import GetInTouchSection from "@/components/home/getInTouchSection";
 import ServicesCards from "@/components/services/servicesCards";
 import React from "react";
-import { avatar3, avatar4 } from "@/public/assets/images";
+import { avatar4 } from "@/public/assets/images";
 import TimelineSection from "@/components/services/timelineSection";
 import ContactSection from "@/components/home/ContactSection";
 import PageSection from "@/components/common/pageSection";
+import { siteConfig } from "@/config/site";
+
+export const metadata = {
+  title: "Services",
+  description: `Security systems and integration from ${siteConfig.name}: access control, CCTV, 24/7 surveillance, alarm systems for commercial, multifamily, and government.`,
+};
 
 export default function Services() {
   return (

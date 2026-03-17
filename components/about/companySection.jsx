@@ -50,14 +50,15 @@ const CompanySection = () => {
                   variants={matrixGlitch(motionDelay)}
                   className="dark:text-brand-muted text-brand-dark text-base roboto_regular leading-relaxed"
                 >
-                  Protection Technologies, LLC. is a leading provider of
-                  advanced security solutions for multi-family, government,
-                  commercial, industrial, and critical infrastructure clients.
-                  We offer cutting-edge products including mobile CCTV trailers
-                  with outdoor motion sensors for perimeter security, true
-                  day/night IP/analog cameras for clear surveillance, and
-                  high-security intrusion sensors for both indoor and hazardous
-                  environments.
+                  Protection Technologies, LLC is a security systems integration
+                  company and leading provider of advanced security solutions
+                  for multifamily, government, commercial, industrial, and
+                  critical infrastructure clients. Founded by Mike Singer in
+                  1999, with roots in locksmithing since 1985, we deliver
+                  alarm, access control, and CCTV systems—including mobile CCTV
+                  trailers with perimeter sensors, day/night IP and analog
+                  cameras, and high-security intrusion sensors for indoor and
+                  hazardous environments.
                 </motion.p>
               </div>
 
@@ -86,7 +87,7 @@ const CompanySection = () => {
               >
                 <Image
                   src={companySectionImage}
-                  alt="Company Section"
+                  alt="Protection Technologies LLC security systems integration and team"
                   className="object-contain"
                 />
                 <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>

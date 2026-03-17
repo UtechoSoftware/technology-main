@@ -27,7 +27,7 @@ export default function Article7() {
       <div className="max-h-[450px] flex items-center justify-center">
         <Image
           src={press4}
-          alt="Article"
+          alt="Protection Technologies LLC East Coast security systems integration"
           className="w-full max-h-[450px] object-cover rounded-2xl"
         />
       </div>
@@ -65,7 +65,7 @@ export default function Article7() {
         <div className="max-h-[450px] flex items-center mb-4 justify-center">
           <Image
             src={press4Sub1}
-            alt="Article"
+            alt="Protection Technologies LLC East Coast security systems integration"
             className="w-full max-h-[450px] object-contain rounded-2xl"
           />
         </div>
@@ -85,7 +85,7 @@ export default function Article7() {
         <div className="max-h-[450px] flex items-center mb-4 justify-center">
           <Image
             src={press4Sub2}
-            alt="Article"
+            alt="Protection Technologies LLC East Coast security systems integration"
             className="w-full max-h-[450px] object-contain rounded-2xl"
           />
         </div>
@@ -108,7 +108,7 @@ export default function Article7() {
         <div className="max-h-[450px] flex items-center mb-4 justify-center">
           <Image
             src={press4Sub3}
-            alt="Article"
+            alt="Protection Technologies LLC East Coast security systems integration"
             className="w-full max-h-[450px] object-contain rounded-2xl"
           />
         </div>
@@ -125,7 +125,7 @@ export default function Article7() {
         <div className="max-h-[450px] flex items-center mb-4 justify-center">
           <Image
             src={press4Sub4}
-            alt="Article"
+            alt="Protection Technologies LLC East Coast security systems integration"
             className="w-full max-h-[450px] object-contain rounded-2xl"
           />
         </div>
@@ -150,7 +150,7 @@ export default function Article7() {
         <div className="max-h-[450px] flex items-center mb-4 justify-center">
           <Image
             src={press4Sub5}
-            alt="Article"
+            alt="Protection Technologies LLC East Coast security systems integration"
             className="w-full max-h-[450px] object-contain rounded-2xl"
           />
         </div>

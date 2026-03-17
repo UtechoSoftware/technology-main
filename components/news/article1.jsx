@@ -16,7 +16,7 @@ export default function Article1() {
       <div className="max-h-[450px] flex items-center justify-center">
         <Image
           src={news}
-          alt="Article"
+          alt="Latch Marks USA smart locks building-wide installation for multifamily access control"
           className="w-full max-h-[450px] object-cover rounded-2xl"
         />
       </div>
@@ -26,7 +26,7 @@ export default function Article1() {
         <div className="flex items-center space-x-4 text-sm mb-4 kumbh_sans_regular">
           <div className="flex items-center space-x-2 text-brand-dark dark:text-brand-white">
             <FaUserAlt className="h-3 w-3 text-brand-secondary" />
-            <span>BY Tech</span>
+            <span>Industry News</span>
           </div>
           <div className="flex items-center space-x-2 text-brand-dark dark:text-brand-white">
             <FaCalendarAlt className="h-3 w-3 text-brand-secondary" />
@@ -265,7 +265,7 @@ export default function Article1() {
             </span>
             <div className="flex flex-wrap gap-2">
               <span className="text-brand-dark dark:text-brand-white px-3 py-1 rounded-full text-sm border border-brand-secondary/30">
-                Real Estate
+                Access Control
               </span>
               <span className="text-brand-dark dark:text-brand-white px-3 py-1 rounded-full text-sm border border-brand-secondary/30">
                 Security

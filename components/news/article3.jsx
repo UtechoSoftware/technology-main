@@ -9,7 +9,7 @@ export default function Article3() {
       <div className="max-h-[450px] flex items-center justify-center">
         <Image
           src={accesscontrol}
-          alt="Article"
+          alt="Smart access control and electronic locking systems for commercial and multifamily buildings"
           className="w-full max-h-[450px] object-cover rounded-2xl"
         />
       </div>
@@ -19,7 +19,7 @@ export default function Article3() {
         <div className="flex items-center space-x-4 text-sm mb-4 kumbh_sans_regular">
           <div className="flex items-center space-x-2 text-brand-dark dark:text-brand-white">
             <FaUserAlt className="h-3 w-3 text-brand-secondary" />
-            <span>BY Tech</span>
+            <span>Protection Technologies LLC</span>
           </div>
           <div className="flex items-center space-x-2 text-brand-dark dark:text-brand-white">
             <FaCalendarAlt className="h-3 w-3 text-brand-secondary" />

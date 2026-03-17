@@ -15,7 +15,7 @@ export default function Article2() {
       <div className="max-h-[450px] flex items-center justify-center">
         <Image
           src={remote}
-          alt="Article"
+          alt="24/7 remote video surveillance and monitoring for commercial security"
           className="w-full max-h-[450px] object-cover rounded-2xl"
         />
       </div>
@@ -25,7 +25,7 @@ export default function Article2() {
         <div className="flex items-center space-x-4 text-sm mb-4 kumbh_sans_regular">
           <div className="flex items-center space-x-2 text-brand-dark dark:text-brand-white">
             <FaUserAlt className="h-3 w-3 text-brand-secondary" />
-            <span>BY Tech</span>
+            <span>Protection Technologies LLC</span>
           </div>
           <div className="flex items-center space-x-2 text-brand-dark dark:text-brand-white">
             <FaCalendarAlt className="h-3 w-3 text-brand-secondary" />
@@ -127,7 +127,7 @@ export default function Article2() {
             </span>
             <div className="flex flex-wrap gap-2">
               <span className="text-brand-dark dark:text-brand-white px-3 py-1 rounded-full text-sm border border-brand-secondary/30">
-                Real Estate
+                Video Surveillance
               </span>
               <span className="text-brand-dark dark:text-brand-white px-3 py-1 rounded-full text-sm border border-brand-secondary/30">
                 Security

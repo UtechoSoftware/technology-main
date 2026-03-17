@@ -55,7 +55,7 @@ const TermsCondition = () => {
                   </h2>
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 roboto_regular">
-                  Welcome to our real estate platform. These Terms of Service
+                  Welcome to Protection Technologies, LLC. These Terms of Service
                   ("Terms") govern your access to and use of our website,
                   applications, and services (collectively, the "Service"). By
                   accessing or using our Service, you agree to be bound by these
@@ -114,27 +114,28 @@ const TermsCondition = () => {
                 </ul>
               </section>
 
-              {/* Property Listings */}
+              {/* Third-Party Content and Services */}
               <section className="space-y-4">
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-white poppins_medium">
-                  Property Listings
+                  Third-Party Content and Services
                 </h2>
                 <p className="text-gray-600 dark:text-gray-300 roboto_regular">
-                  Our Service may include property listings provided by third
-                  parties. We do not:
+                  Our Service may include content, links, or integrations
+                  provided by third parties. We do not:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-gray-600 dark:text-gray-300 roboto_regular">
                   <li>
                     Guarantee the accuracy, completeness, or reliability of any
-                    listing
+                    third-party content
                   </li>
-                  <li>Endorse any property, agent, or listing</li>
+                  <li>Endorse any third-party product, service, or provider</li>
                   <li>
                     Have control over the quality, safety, or legality of
-                    properties listed
+                    third-party offerings
                   </li>
                   <li>
-                    Guarantee that any property is available for sale or rent
+                    Guarantee availability or performance of any third-party
+                    service
                   </li>
                 </ul>
               </section>
@@ -189,7 +190,7 @@ const TermsCondition = () => {
                 </h2>
                 <p className="text-gray-600 dark:text-gray-300 roboto_regular">
                   These Terms shall be governed and construed in accordance with
-                  the laws of [Your Country/State], without regard to its
+                  the laws of the State of New Jersey, without regard to its
                   conflict of law provisions.
                 </p>
               </section>
@@ -221,11 +222,11 @@ const TermsCondition = () => {
                   at:
                 </p>
                 <p className="text-gray-600 dark:text-gray-300 roboto_regular">
-                  Email: legal@realestate.com
+                  Email: [Your company legal email]
                   <br />
-                  Phone: +1 (555) 123-4567
+                  Phone: [Your company phone]
                   <br />
-                  Address: 123 Real Estate Avenue, Suite 100, New York, NY 10001
+                  Address: [Your company address]
                 </p>
               </section>
             </div>

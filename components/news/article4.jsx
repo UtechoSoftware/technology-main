@@ -21,7 +21,7 @@ export default function Article4() {
       <div className="max-h-[450px] flex items-center justify-center">
         <Image
           src={press1}
-          alt="Article"
+          alt="Protection Technologies LLC security systems integration and technology"
           className="w-full max-h-[450px] object-cover rounded-2xl"
         />
       </div>
@@ -40,7 +40,7 @@ export default function Article4() {
         </div>
 
         <h1 className="text-3xl kumbh_sans_semibold text-brand-dark dark:text-white mb-6 leading-tight">
-          Inside the Technology:How Protection Technologies LLC Delivers
+          Inside the Technology: How Protection Technologies LLC Delivers
           Security You Can Trust
         </h1>
 
@@ -60,7 +60,7 @@ export default function Article4() {
         <div className="max-h-[450px] flex items-center mb-4 justify-center">
           <Image
             src={press1Sub1}
-            alt="Article"
+            alt="Protection Technologies LLC security systems integration and technology"
             className="w-full max-h-[450px] object-contain rounded-2xl"
           />
         </div>
@@ -82,7 +82,7 @@ export default function Article4() {
         <div className="max-h-[450px] flex items-center mb-4 justify-center">
           <Image
             src={press1Sub2}
-            alt="Article"
+            alt="Protection Technologies LLC security systems integration and technology"
             className="w-full max-h-[450px] object-contain rounded-2xl"
           />
         </div>
@@ -104,7 +104,7 @@ export default function Article4() {
         <div className="max-h-[450px] flex items-center mb-4 justify-center">
           <Image
             src={press1Sub3}
-            alt="Article"
+            alt="Protection Technologies LLC security systems integration and technology"
             className="w-full max-h-[450px] object-contain rounded-2xl"
           />
         </div>

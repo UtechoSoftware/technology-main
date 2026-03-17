@@ -14,7 +14,7 @@ const tabs = [
   // { id: "calendar", label: "Activation Calender", Component: Calender },
   { id: "nj-devils", label: "NJ Devils", Component: NjDevils },
   { id: "ny-jets", label: "NY Jets", Component: NyJets },
-  { id: "Altana-Falcons", label: "Altana Falcons", Component: AltanaFalcons },
+  { id: "atlanta-falcons", label: "Atlanta Falcons", Component: AltanaFalcons },
   { id: "Brooklyn-Nets", label: "Brooklyn Nets", Component: BrooklynNets },
   { id: "Miami-Dolphins", label: "Miami Dolphins", Component: MiamiDolphins },
 ];
@@ -28,8 +28,16 @@ export default function Partnerships() {
   }, [activeTab]);
 
   return (
-    <section className="bg-brand-ligthSecondaryDark py-12 px-4 dark:bg-brand-secondaryDark">
+    <section className="bg-brand-ligthSecondaryDark py-12 px-4 dark:bg-brand-secondaryDark" aria-label="Partnerships">
       <div className="mx-auto max-w-7xl">
+        <header className="text-center max-w-3xl mx-auto mb-10">
+          <h2 className="text-2xl md:text-3xl kumbh_sans_semibold text-brand-dark dark:text-white mb-3">
+            Security & Technology Partnerships
+          </h2>
+          <p className="text-brand-dark dark:text-brand-muted text-base leading-relaxed">
+            Protection Technologies, LLC partners with premier sports and venue organizations—including the NJ Devils, NY Jets, Atlanta Falcons, Brooklyn Nets, and Miami Dolphins—to deliver integrated security technology, access control, and surveillance solutions for their facilities and events.
+          </p>
+        </header>
         <div
           className="flex flex-wrap gap-3 mt-0 md:mt-8 justify-center pb-6"
           role="tablist"

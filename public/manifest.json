@@ -1,0 +1,17 @@
+{
+  "name": "Protection Technologies, LLC",
+  "short_name": "Protection Technologies",
+  "description": "Integrated security technology systems — CCTV, access control, 24/7 surveillance for government, commercial, and critical sites.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1B1111",
+  "theme_color": "#1B1111",
+  "icons": [
+    {
+      "src": "/assets/svg/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

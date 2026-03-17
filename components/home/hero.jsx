@@ -36,8 +36,9 @@ export default function Hero() {
         muted
         loop
         playsInline
+        preload="metadata"
         className="w-full h-full object-cover absolute top-0 left-0 z-0"
-        // style={{ mixBlendMode: "luminosity" }}
+        aria-hidden
       >
         <source src="/assets/images/pageVideo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
@@ -62,9 +63,10 @@ export default function Hero() {
               className="capitalize kumbh_sans_medium max-w-4xl mx-auto text-lg text-white"
               variants={fadeIn("up", motionDelay, true)}
             >
-              A new property involves careful planning, design, and seamless
-              execution. our managed services stand out by offering a unique
-              blend of National reach and local expertise
+              Integrated security involves careful planning, design, and
+              seamless execution. Our solutions stand out through a unique blend
+              of national reach and local expertise for government, commercial,
+              and critical sites.
             </motion.p>
             <motion.button
               onClick={() => router.push("/services")}

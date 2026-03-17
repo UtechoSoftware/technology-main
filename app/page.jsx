@@ -1,17 +1,19 @@
 "use client";
 
-// Import components with dynamic loading for better performance
-import Brands from "@/components/home/brands";
-import ContactSection from "@/components/home/ContactSection";
-import FeatureDesign from "@/components/home/featureDesign";
-import GetInTouchSection from "@/components/home/getInTouchSection";
+import dynamic from "next/dynamic";
 import Hero from "@/components/home/hero";
-import NewsSection from "@/components/home/newsSection";
-import OfferSection from "@/components/home/offerSection";
-import ServicesSection from "@/components/home/servicesSection";
 import SpecialService from "@/components/home/specialService";
-import TeamExpertSection from "@/components/home/TeamExpertSection";
-import WhyChooseUsSection from "@/components/home/whyChooseUsSection";
+
+// Below-fold sections: load JS after initial paint to improve LCP and TTI
+const FeatureDesign = dynamic(() => import("@/components/home/featureDesign"), { ssr: true });
+const OfferSection = dynamic(() => import("@/components/home/offerSection"), { ssr: true });
+const Brands = dynamic(() => import("@/components/home/brands"), { ssr: true });
+const TeamExpertSection = dynamic(() => import("@/components/home/TeamExpertSection"), { ssr: true });
+const ServicesSection = dynamic(() => import("@/components/home/servicesSection"), { ssr: true });
+const WhyChooseUsSection = dynamic(() => import("@/components/home/whyChooseUsSection"), { ssr: true });
+const GetInTouchSection = dynamic(() => import("@/components/home/getInTouchSection"), { ssr: true });
+const NewsSection = dynamic(() => import("@/components/home/newsSection"), { ssr: true });
+const ContactSection = dynamic(() => import("@/components/home/ContactSection"), { ssr: true });
 
 export default function Home() {
   return (

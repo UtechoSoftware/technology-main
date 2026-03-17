@@ -3,6 +3,7 @@
 import { slideIn, staggerContainer } from "@/utils/motion";
 import { motion } from "framer-motion";
 import { motionDelay } from "../api/axiosInstance";
+import LazyVideo from "@/components/ui/LazyVideo";
 
 const IntegratedServices = () => {
   const aboutSectionText = [
@@ -79,22 +80,13 @@ const IntegratedServices = () => {
                   alt="About"
                 /> */}
                 <div className="w-[70%] mx-auto mt-6 rounded-lg overflow-hidden bg-transparent">
-                  <video
+                  <LazyVideo
+                    src="https://cdn.midjourney.com/video/df3afe3a-b553-4eae-8a56-f21dab66370e/1.mp4"
                     autoPlay
                     muted
                     loop
-                    playsInline
-                    className="w-full h-auto object-cover rounded-lg"
-                    style={{
-                      display: "block",
-                      backgroundColor: "transparent",
-                    }}
-                  >
-                    <source
-                      src="https://cdn.midjourney.com/video/df3afe3a-b553-4eae-8a56-f21dab66370e/1.mp4"
-                      type="video/mp4"
-                    />
-                  </video>
+                    className="w-full h-auto object-cover rounded-lg block bg-transparent"
+                  />
                 </div>
               </div>
             </motion.div>

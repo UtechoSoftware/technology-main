@@ -6,7 +6,13 @@ import Brands from "@/components/home/brands";
 import ContactSection from "@/components/home/ContactSection";
 import TeamExpertSection from "@/components/home/TeamExpertSection";
 import WhyChooseUsSection from "@/components/home/whyChooseUsSection";
+import { siteConfig } from "@/config/site";
 import React from "react";
+
+export const metadata = {
+  title: "About Us",
+  description: `Learn about ${siteConfig.name} — security systems integration since 1985. Founded by Mike Singer, we deliver alarm, access control, and CCTV for multifamily, commercial, and government.`,
+};
 
 export default function About() {
   return (
